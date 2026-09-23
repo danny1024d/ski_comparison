@@ -890,6 +890,26 @@
       color: var(--near-black);
     }
 
+    /* 住宿外鏈樣式 */
+    .stay-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25em;
+      color: var(--route-blue);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dashed var(--route-blue);
+      transition: color 0.15s ease, border-bottom-color 0.15s ease;
+    }
+    .stay-link:hover {
+      color: var(--terracotta);
+      border-bottom-color: var(--terracotta);
+    }
+    .stay-link .ti {
+      font-size: 0.9em;
+      vertical-align: -1px;
+    }
+
     /* ===== 響應式 ===== */
     @media (max-width: 768px) {
       body { padding: 0 1rem; }
@@ -1345,26 +1365,26 @@
         <div class="route-card-icon"><i class="ti ti-mountain"></i></div>
         <div>
           <div class="route-card-title">留壽都 Rusutsu</div>
-          <div class="route-card-subtitle">&#x4F4F;&#x5BBF;&#xFF1A;&#x96EA;&#x5834;&#x9644;&#x8FD1; Airbnb&#xFF08;&#x6CC9;&#x5DDD;&#x5340;&#x57DF;&#xFF09;</div>
+          <div class="route-card-subtitle">住宿：泉川區域 Airbnb <a href="https://www.airbnb.com.tw/rooms/39761634?unique_share_id=9795cb21-d533-4e62-ba6d-096c029a29c0&viralityEntryPoint=1&s=76" target="_blank" rel="noopener noreferrer" class="stay-link" style="margin-left: 0.4em;"><i class="ti ti-external-link"></i> Airbnb 房源</a></div>
         </div>
       </div>
 
       <!-- 路線 A：機場 → 雪場 -->
-      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--route-blue); margin-bottom: 0.8rem;"><i class="ti ti-plane-arrival" style="margin-right: 0.3em;"></i> &#x6A5F;&#x5834; &#8594; &#x96EA;&#x5834;</h4>
+      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--route-blue); margin-bottom: 0.8rem;"><i class="ti ti-plane-arrival" style="margin-right: 0.3em;"></i> 機場 &#8594; 雪場</h4>
       <div class="flow-diagram">
         <div class="flow-node flow-start">
           <span class="flow-node-icon"><i class="ti ti-plane"></i></span>
-          <span class="flow-node-name">&#x65B0;&#x5343;&#x6B73;&#x6A5F;&#x5834;</span>
+          <span class="flow-node-name">新千歲機場</span>
           <span class="flow-node-sub">CTS</span>
         </div>
         <div class="flow-arrow">
-          <span class="flow-arrow-label">&#x76F4;&#x9054;&#x5DF4;&#x58EB;</span>
+          <span class="flow-arrow-label">直達巴士</span>
           <span class="flow-arrow-line">&#8594;</span>
-          <span class="flow-arrow-sub">&#x7D04; 120 min</span>
+          <span class="flow-arrow-sub">約 120 min</span>
         </div>
         <div class="flow-node flow-end">
           <span class="flow-node-icon"><i class="ti ti-snowflake"></i></span>
-          <span class="flow-node-name">&#x7559;&#x58FD;&#x90FD;&#x5EA6;&#x5047;&#x6751;</span>
+          <span class="flow-node-name">留壽都度假村</span>
           <span class="flow-node-sub">Rusutsu Resort</span>
         </div>
       </div>
@@ -1372,53 +1392,53 @@
       <table class="transport">
         <thead>
           <tr>
-            <th>&#x4EA4;&#x901A;&#x65B9;&#x5F0F;</th>
-            <th>&#x6642;&#x9593;</th>
-            <th>&#x8CBB;&#x7528;&#xFF08;&#x55AE;&#x7A0B;&#xFF09;</th>
-            <th>&#x5099;&#x8A3B;</th>
+            <th>交通方式</th>
+            <th>時間</th>
+            <th>費用（單程）</th>
+            <th>備註</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><span class="transport-method"><i class="ti ti-bus"></i> Big Runs Bus</span> <span class="transport-recommend">&#x63A8;&#x85A6;</span></td>
-            <td><span class="transport-time">&#x7D04; 120 min</span></td>
+            <td><span class="transport-method"><i class="ti ti-bus"></i> Big Runs Bus</span> <span class="transport-recommend">推薦</span></td>
+            <td><span class="transport-time">約 120 min</span></td>
             <td><span class="transport-price">&#165;5,000&#8211;6,000</span></td>
-            <td>&#x5B8C;&#x5168;&#x9810;&#x7D04;&#x5236;&#xFF0C;&#x5EA6;&#x5047;&#x6751;&#x5BA2;&#x4EBA;&#x5C08;&#x5C6C;<br><span class="transport-note">&#x5EFA;&#x8B70;&#x63D0;&#x524D; 1&#8211;2 &#x9031;&#x9810;&#x7D04;</span></td>
+            <td>完全預約制，度假村客人專屬<br><span class="transport-note">建議提前 1&#8211;2 週預約</span></td>
           </tr>
           <tr>
             <td><span class="transport-method"><i class="ti ti-bus"></i> Resort Liner</span></td>
-            <td><span class="transport-time">&#x7D04; 120 min</span></td>
+            <td><span class="transport-time">約 120 min</span></td>
             <td><span class="transport-price">&#165;5,000&#8211;6,000</span></td>
-            <td>&#x591A;&#x689D;&#x8DEF;&#x7DDA;&#x3001;&#x73ED;&#x6B21;&#x8F03;&#x591A;&#xFF0C;&#x9700;&#x9810;&#x7D04;</td>
+            <td>多條路線、班次較多，需預約</td>
           </tr>
 
         </tbody>
       </table>
 
       <!-- 路線 B：住宿 → 雪場 -->
-      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--stay-olive); margin: 1.5rem 0 0.8rem;"><i class="ti ti-home" style="margin-right: 0.3em;"></i> Airbnb &#8594; &#x96EA;&#x5834;</h4>
+      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--stay-olive); margin: 1.5rem 0 0.8rem;"><i class="ti ti-home" style="margin-right: 0.3em;"></i> Airbnb &#8594; 雪場</h4>
       <div class="flow-diagram">
         <div class="flow-node flow-start" style="background: rgba(107, 124, 94, 0.10); border-color: var(--stay-olive);">
           <span class="flow-node-icon" style="color: var(--stay-olive);"><i class="ti ti-home"></i></span>
-          <span class="flow-node-name">&#x6CC9;&#x5DDD;&#x5340;&#x57DF; Airbnb</span>
-          <span class="flow-node-sub">&#x7559;&#x58FD;&#x90FD;&#x6751;</span>
+          <span class="flow-node-name">泉川區域 Airbnb</span>
+          <span class="flow-node-sub">留壽都村</span>
         </div>
         <div class="flow-arrow">
-          <span class="flow-arrow-label" style="background: rgba(107, 124, 94, 0.10); color: var(--stay-olive);">&#x6B65;&#x884C;</span>
+          <span class="flow-arrow-label" style="background: rgba(107, 124, 94, 0.10); color: var(--stay-olive);">步行</span>
           <span class="flow-arrow-line">&#8594;</span>
           <span class="flow-arrow-sub">6&#8211;10 min</span>
         </div>
         <div class="flow-node flow-end">
           <span class="flow-node-icon"><i class="ti ti-snowflake"></i></span>
-          <span class="flow-node-name">&#x7559;&#x58FD;&#x90FD;&#x96EA;&#x5834;</span>
-          <span class="flow-node-sub">&#x897F;&#x5C71;&#x7E9C;&#x8ECA;&#x7AD9;</span>
+          <span class="flow-node-name">留壽都雪場</span>
+          <span class="flow-node-sub">西山纜車站</span>
         </div>
       </div>
 
       <div class="stay-note">
         <span class="stay-note-icon"><i class="ti ti-info-circle"></i></span>
         <div class="stay-note-text">
-          <strong>&#x4F4F;&#x5BBF;&#x63D0;&#x793A;&#xFF1A;</strong>&#x6CC9;&#x5DDD;&#x5340;&#x57DF;&#x7684; Airbnb &#x6728;&#x5C4B;&#x5225;&#x5885;&#xFF0C;&#x9810;&#x8A02;&#x6642;&#x52D9;&#x5FC5;&#x78BA;&#x8A8D;&#x8DDD;&#x96EA;&#x5834;<strong>&#x6B65;&#x884C;&#x8DDD;&#x96E2;</strong>&#xFF0C;&#x512A;&#x5148;&#x9078;&#x64C7;&#x6B65;&#x884C; 10 &#x5206;&#x9418;&#x5167;&#x53EF;&#x9054;&#x7E9C;&#x8ECA;&#x7AD9;&#x7684;&#x623F;&#x6E90;&#x3002;&#x7559;&#x58FD;&#x90FD;&#x6751;&#x5167;&#x7121;&#x5927;&#x578B;&#x8D85;&#x5E02;&#xFF0C;&#x5EFA;&#x8B70;&#x5728;&#x5DF4;&#x58EB;&#x4E2D;&#x9014;&#x63A1;&#x8CB7;&#x98DF;&#x6750;&#x3002;
+          <strong>住宿提示：</strong>泉川區域 Airbnb 參考房源為 <a href="https://www.airbnb.com.tw/rooms/39761634?unique_share_id=9795cb21-d533-4e62-ba6d-096c029a29c0&viralityEntryPoint=1&s=76" target="_blank" rel="noopener noreferrer" class="stay-link">Rusutsu Wood Chalet 木屋別墅</a>，預訂時務必確認距雪場步行距離（步行約 6–10 分鐘可達西山纜車站）。留壽都村內無大型超市，建議在機場或巴士中途採買食材。
         </div>
       </div>
     </div>
@@ -1428,27 +1448,27 @@
       <div class="route-card-header">
         <div class="route-card-icon"><i class="ti ti-mountain"></i></div>
         <div>
-          <div class="route-card-title">&#x5BCC;&#x826F;&#x91CE; Furano</div>
-          <div class="route-card-subtitle">&#x4F4F;&#x5BBF;&#xFF1A;&#x96EA;&#x5834;&#x9644;&#x8FD1; Airbnb&#xFF08;&#x5317;&#x4E4B;&#x5CF0;&#x5340;&#x57DF;&#xFF09;</div>
+          <div class="route-card-title">富良野 Furano</div>
+          <div class="route-card-subtitle">住宿：Hotel Naturwald Furano（富良野自然森林飯店） <a href="https://www.agoda.com/zh-tw/hotel-naturwald-furano/hotel/furano-jp.html?countryId=3&finalPriceView=1&isShowMobileAppPrice=false&cid=1922895&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=2&maxRooms=0&checkIn=2026-12-25&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=3&showReviewSubmissionEntry=false&currencyCode=TWD&isFreeOccSearch=false&tag=4e1b4a3c-b440-4e92-bfb1-2a089d195c27&tspTypes=7%2C1%2C8&los=1&searchrequestid=f36e1270-69f8-471f-9821-8a8a1c7c4b2f&ds=wgkGMA8hVb8B%2FmOY" target="_blank" rel="noopener noreferrer" class="stay-link" style="margin-left: 0.4em;"><i class="ti ti-external-link"></i> Agoda 飯店連結</a></div>
         </div>
       </div>
 
       <!-- 路線 A：機場 → 雪場 -->
-      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--route-blue); margin-bottom: 0.8rem;"><i class="ti ti-plane-arrival" style="margin-right: 0.3em;"></i> &#x6A5F;&#x5834; &#8594; &#x96EA;&#x5834;</h4>
+      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--route-blue); margin-bottom: 0.8rem;"><i class="ti ti-plane-arrival" style="margin-right: 0.3em;"></i> 機場 &#8594; 雪場</h4>
       <div class="flow-diagram">
         <div class="flow-node flow-start">
           <span class="flow-node-icon"><i class="ti ti-plane"></i></span>
-          <span class="flow-node-name">&#x65ED;&#x5DDD;&#x6A5F;&#x5834;</span>
+          <span class="flow-node-name">旭川機場</span>
           <span class="flow-node-sub">AKJ</span>
         </div>
         <div class="flow-arrow">
-          <span class="flow-arrow-label">&#x85B0;&#x8863;&#x8349;&#x865F;&#x5DF4;&#x58EB;</span>
+          <span class="flow-arrow-label">薰衣草號巴士</span>
           <span class="flow-arrow-line">&#8594;</span>
-          <span class="flow-arrow-sub">&#x7D04; 80 min</span>
+          <span class="flow-arrow-sub">約 80 min</span>
         </div>
         <div class="flow-node flow-end">
           <span class="flow-node-icon"><i class="ti ti-snowflake"></i></span>
-          <span class="flow-node-name">&#x5BCC;&#x826F;&#x91CE;&#x96EA;&#x5834;</span>
+          <span class="flow-node-name">富良野雪場</span>
           <span class="flow-node-sub">Furano Ski Resort</span>
         </div>
       </div>
@@ -1456,51 +1476,51 @@
       <table class="transport">
         <thead>
           <tr>
-            <th>&#x4EA4;&#x901A;&#x65B9;&#x5F0F;</th>
-            <th>&#x6642;&#x9593;</th>
-            <th>&#x8CBB;&#x7528;&#xFF08;&#x55AE;&#x7A0B;&#xFF09;</th>
-            <th>&#x5099;&#x8A3B;</th>
+            <th>交通方式</th>
+            <th>時間</th>
+            <th>費用（單程）</th>
+            <th>備註</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><span class="transport-method"><i class="ti ti-bus"></i> &#x85B0;&#x8863;&#x8349;&#x865F;&#xFF08;Lavender Bus&#xFF09;</span> <span class="transport-recommend">&#x63A8;&#x85A6;</span></td>
-            <td><span class="transport-time">&#x7D04; 80 min</span></td>
+            <td><span class="transport-method"><i class="ti ti-bus"></i> 薰衣草號（Lavender Bus）</span> <span class="transport-recommend">推薦</span></td>
+            <td><span class="transport-time">約 80 min</span></td>
             <td><span class="transport-price">&#165;790</span></td>
-            <td>&#x6BCF;&#x65E5;&#x7D04; 7 &#x73ED;&#x5F80;&#x8FD4;&#xFF0C;&#x514D;&#x9810;&#x7D04;&#x3001;&#x4E0A;&#x8ECA;&#x4ED8;&#x8CBB;<br><span class="transport-note">&#x53EF;&#x76F4;&#x9054;&#x65B0;&#x5BCC;&#x826F;&#x91CE;&#x738B;&#x5B50;&#x98EF;&#x5E97;&#x7B49;&#x96EA;&#x5834;&#x5468;&#x908A;</span></td>
+            <td>每日約 7 班往返，免預約、上車付費<br><span class="transport-note">停靠自然森林飯店門口、新富良野王子飯店等雪場周邊</span></td>
           </tr>
           <tr>
-            <td><span class="transport-method"><i class="ti ti-train"></i> JR &#x8F49;&#x4E58;</span></td>
-            <td><span class="transport-time">&#x7D04; 110&#8211;120 min</span></td>
+            <td><span class="transport-method"><i class="ti ti-train"></i> JR 轉乘</span></td>
+            <td><span class="transport-time">約 110&#8211;120 min</span></td>
             <td><span class="transport-price">&#165;1,100&#8211;1,600</span></td>
-            <td>&#x6A5F;&#x5834;&#x5DF4;&#x58EB; &#8594; &#x65ED;&#x5DDD;&#x7AD9;&#xFF08;35 min&#xFF09;&#8594; JR &#x5BCC;&#x826F;&#x91CE;&#x7DDA;&#xFF08;75 min&#xFF09;<br><span class="transport-note">&#x5BCC;&#x826F;&#x91CE;&#x7DDA;&#x4E0D;&#x652F;&#x63F4; IC &#x5361;&#xFF0C;&#x9700;&#x8CFC;&#x7D19;&#x672C;&#x8ECA;&#x7968;</span></td>
+            <td>機場巴士 &#8594; 旭川站（35 min）&#8594; JR 富良野線（75 min）<br><span class="transport-note">富良野線不支援 IC 卡，需購紙本車票</span></td>
           </tr>
           <tr>
             <td><span class="transport-method"><i class="ti ti-bus"></i> Resort Liner</span></td>
-            <td><span class="transport-time">&#x7D04; 60&#8211;80 min</span></td>
+            <td><span class="transport-time">約 60&#8211;80 min</span></td>
             <td><span class="transport-price">&#165;3,000&#8211;5,000</span></td>
-            <td>&#x6ECB;&#x96EA;&#x5B63;&#x5C08;&#x7528;&#x9810;&#x7D04;&#x5236;&#x5DF4;&#x58EB;&#xFF0C;&#x53EF;&#x651C;&#x5E36;&#x96EA;&#x5177;</td>
+            <td>滑雪季專用預約制巴士，可攜帶雪具</td>
           </tr>
 
         </tbody>
       </table>
 
       <!-- 路線 B：住宿 → 雪場 -->
-      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--stay-olive); margin: 1.5rem 0 0.8rem;"><i class="ti ti-home" style="margin-right: 0.3em;"></i> Airbnb &#8594; &#x96EA;&#x5834;</h4>
+      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--stay-olive); margin: 1.5rem 0 0.8rem;"><i class="ti ti-building" style="margin-right: 0.3em;"></i> 飯店 &#8594; 雪場</h4>
       <div class="flow-diagram">
         <div class="flow-node flow-start" style="background: rgba(107, 124, 94, 0.10); border-color: var(--stay-olive);">
-          <span class="flow-node-icon" style="color: var(--stay-olive);"><i class="ti ti-home"></i></span>
-          <span class="flow-node-name">&#x5317;&#x4E4B;&#x5CF0;&#x5340;&#x57DF; Airbnb</span>
-          <span class="flow-node-sub">Kitanomine</span>
+          <span class="flow-node-icon" style="color: var(--stay-olive);"><i class="ti ti-building"></i></span>
+          <span class="flow-node-name">Hotel Naturwald</span>
+          <span class="flow-node-sub">自然森林飯店</span>
         </div>
         <div class="flow-arrow">
-          <span class="flow-arrow-label" style="background: rgba(107, 124, 94, 0.10); color: var(--stay-olive);">&#x6B65;&#x884C;</span>
+          <span class="flow-arrow-label" style="background: rgba(107, 124, 94, 0.10); color: var(--stay-olive);">步行</span>
           <span class="flow-arrow-line">&#8594;</span>
-          <span class="flow-arrow-sub">5&#8211;10 min</span>
+          <span class="flow-arrow-sub">2&#8211;3 min</span>
         </div>
         <div class="flow-node flow-end">
           <span class="flow-node-icon"><i class="ti ti-snowflake"></i></span>
-          <span class="flow-node-name">&#x5317;&#x4E4B;&#x5CF0;&#x7E9C;&#x8ECA;&#x7AD9;</span>
+          <span class="flow-node-name">北之峰纜車站</span>
           <span class="flow-node-sub">Kitanomine Zone</span>
         </div>
       </div>
@@ -1508,7 +1528,7 @@
       <div class="stay-note">
         <span class="stay-note-icon"><i class="ti ti-info-circle"></i></span>
         <div class="stay-note-text">
-          <strong>&#x4F4F;&#x5BBF;&#x63D0;&#x793A;&#xFF1A;</strong>&#x5317;&#x4E4B;&#x5CF0;&#x662F;&#x5BCC;&#x826F;&#x91CE;&#x6700;&#x71B1;&#x9580;&#x7684;&#x6C11;&#x5BBF;&#x5340;&#xFF0C;&#x591A;&#x6578;&#x623F;&#x6E90;&#x6B65;&#x884C;&#x5373;&#x53EF;&#x5230;&#x9054;&#x7E9C;&#x8ECA;&#x7AD9;&#xFF0C;&#x9910;&#x5EF3;&#x8207;&#x5546;&#x5E97;&#x6BD4;&#x5BCC;&#x826F;&#x91CE;&#x5340;&#x66F4;&#x8C50;&#x5BCC;&#x3002;&#x9810;&#x8A02;&#x6642;&#x6CE8;&#x610F;&#x5C71;&#x5761;&#x8DEF;&#x6BB5;&#xFF0C;&#x62D6;&#x884C;&#x674E;&#x5728;&#x96EA;&#x5730;&#x53EF;&#x80FD;&#x4E0D;&#x4FBF;&#xFF0C;&#x5EFA;&#x8B70;&#x4F7F;&#x7528;&#x96EA;&#x5730;&#x884C;&#x674E;&#x7BB1;&#x5957;&#x6216;&#x5148;&#x5BC4;&#x9001;&#x884C;&#x674E;&#x3002;
+          <strong>住宿提示：</strong>預定參考住宿為 <a href="https://www.agoda.com/zh-tw/hotel-naturwald-furano/hotel/furano-jp.html?countryId=3&finalPriceView=1&isShowMobileAppPrice=false&cid=1922895&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=2&maxRooms=0&checkIn=2026-12-25&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=3&showReviewSubmissionEntry=false&currencyCode=TWD&isFreeOccSearch=false&tag=4e1b4a3c-b440-4e92-bfb1-2a089d195c27&tspTypes=7%2C1%2C8&los=1&searchrequestid=f36e1270-69f8-471f-9821-8a8a1c7c4b2f&ds=wgkGMA8hVb8B%2FmOY" target="_blank" rel="noopener noreferrer" class="stay-link">Hotel Naturwald Furano (富良野自然森林飯店)</a>，飯店坐落於北之峰纜車站正對面，出門步行僅 2–3 分鐘即可抵達雪道，門口即有薰衣草號巴士站牌，附設大浴場、免費點心與滑雪乾燥室，周邊餐廳密集，是北之峰最熱門的滑雪首選！
         </div>
       </div>
     </div>
@@ -1912,7 +1932,7 @@
           <span>留壽都</span>
           <span class="tag tag-coral">極致粉雪奢華</span>
         </div>
-        <div class="budget-card-sub">住雪場泉川 Airbnb（NT$ 3,823/晚）</div>
+        <div class="budget-card-sub"><a href="https://www.airbnb.com.tw/rooms/39761634?unique_share_id=9795cb21-d533-4e62-ba6d-096c029a29c0&viralityEntryPoint=1&s=76" target="_blank" rel="noopener noreferrer" class="stay-link"><i class="ti ti-brand-airbnb"></i> 泉川 Airbnb</a>（NT$ 3,823/晚）</div>
         <div class="budget-card-price-main">NT$ 27,324</div>
         <div class="budget-card-price-sub">&#8776; &#165;130,100 JPY</div>
       </div>
@@ -1931,7 +1951,7 @@
           <span>富良野</span>
           <span class="tag tag-amber">綜合平衡首選</span>
         </div>
-        <div class="budget-card-sub">住雪場北之峰 Airbnb（NT$ 2,800/晚）</div>
+        <div class="budget-card-sub"><a href="https://www.agoda.com/zh-tw/hotel-naturwald-furano/hotel/furano-jp.html?countryId=3&finalPriceView=1&isShowMobileAppPrice=false&cid=1922895&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=2&maxRooms=0&checkIn=2026-12-25&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=3&showReviewSubmissionEntry=false&currencyCode=TWD&isFreeOccSearch=false&tag=4e1b4a3c-b440-4e92-bfb1-2a089d195c27&tspTypes=7%2C1%2C8&los=1&searchrequestid=f36e1270-69f8-471f-9821-8a8a1c7c4b2f&ds=wgkGMA8hVb8B%2FmOY" target="_blank" rel="noopener noreferrer" class="stay-link"><i class="ti ti-building"></i> 自然森林飯店 (Agoda)</a>（NT$ 2,800/晚）</div>
         <div class="budget-card-price-main">NT$ 16,880</div>
         <div class="budget-card-price-sub">&#8776; &#165;80,380 JPY</div>
       </div>
@@ -2027,10 +2047,10 @@
         </tr>
         <tr>
           <td><i class="ti ti-map-pin"></i> 住宿型態與位置</td>
-          <td>泉川區 Airbnb 木屋別墅<br><span style="font-size: 0.8em; color: var(--text-tertiary);">近雪場</span></td>
-          <td>北之峰區 Airbnb 民宿<br><span style="font-size: 0.8em; color: var(--text-tertiary);">近纜車站</span></td>
-          <td>旭川市區商務/星級飯店<br><span style="font-size: 0.8em; color: var(--text-tertiary);">JR 旭川站周邊</span></td>
-          <td>札幌市區熱門商圈飯店<br><span style="font-size: 0.8em; color: var(--text-tertiary);">札幌站 / 大通 / 薄野</span></td>
+          <td>泉川區 Airbnb 木屋別墅<br><span style="font-size: 0.8em; color: var(--text-tertiary);">近雪場（步行 6–10分）</span><br><a href="https://www.airbnb.com.tw/rooms/39761634?unique_share_id=9795cb21-d533-4e62-ba6d-096c029a29c0&viralityEntryPoint=1&s=76" target="_blank" rel="noopener noreferrer" class="stay-link" style="margin-top: 0.35em; font-size: 0.82em;"><i class="ti ti-external-link"></i> Airbnb 房源連結</a></td>
+          <td>Hotel Naturwald Furano<br><span style="font-size: 0.8em; color: var(--text-tertiary);">自然森林飯店（北之峰纜車站前）</span><br><a href="https://www.agoda.com/zh-tw/hotel-naturwald-furano/hotel/furano-jp.html?countryId=3&finalPriceView=1&isShowMobileAppPrice=false&cid=1922895&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=2&maxRooms=0&checkIn=2026-12-25&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=3&showReviewSubmissionEntry=false&currencyCode=TWD&isFreeOccSearch=false&tag=4e1b4a3c-b440-4e92-bfb1-2a089d195c27&tspTypes=7%2C1%2C8&los=1&searchrequestid=f36e1270-69f8-471f-9821-8a8a1c7c4b2f&ds=wgkGMA8hVb8B%2FmOY" target="_blank" rel="noopener noreferrer" class="stay-link" style="margin-top: 0.35em; font-size: 0.82em;"><i class="ti ti-external-link"></i> Agoda 飯店連結</a></td>
+          <td>旭川市區商務/星級飯店<br><span style="font-size: 0.8em; color: var(--text-tertiary);">JR 旭川站周邊（OMO7 / Art Hotel等）</span></td>
+          <td>札幌市區熱門商圈飯店<br><span style="font-size: 0.8em; color: var(--text-tertiary);">札幌站 / 大通 / 薄野周邊</span></td>
         </tr>
 
         <!-- 交通費用 -->
