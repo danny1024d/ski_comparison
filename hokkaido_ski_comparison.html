@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>北海道滑雪場比較指南 &#8212; 留壽都・富良野・神居・札幌手稻</title>
+  <meta name="description" content="北海道四大滑雪場深度比較：留壽都度假村、富良野滑雪場、神居滑雪場、札幌手稻滑雪場的雪道、票價、交通、住宿全方位對照表">
+
+  <!-- 1. 字體 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap">
+  <!-- 2. 圖標 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+
+  <style>
+    /* ===== 設計系統 — Claude 暖色調 ===== */
+    :root {
+      --parchment: #f5f4ed;
+      --ivory: #faf9f5;
+      --near-black: #141413;
+      --terracotta: #c96442;
+      --coral: #d97757;
+      --route-blue: #4a7c8a;
+      --food-amber: #b8860b;
+      --stay-olive: #6b7c5e;
+      --alert-rust: #a0522d;
+      --nature-sage: #8fbc8f;
+      --snow-blue: #5b8fa8;
+      --powder-white: #e8eef2;
+
+      --text-primary: #2d2b28;
+      --text-secondary: #524f4a;
+      --text-tertiary: #87867f;
+      --border-cream: #e8e6dc;
+      --border-warm: #d1cfc5;
+
+      --font-serif: 'Noto Serif SC', 'Source Han Serif SC', serif;
+      --font-sans: 'Noto Sans SC', 'Source Han Sans SC', sans-serif;
+      --font-mono: 'JetBrains Mono', 'SF Mono', 'Consolas', monospace;
+
+      --text-base: 17px;
+      --text-sm: 15px;
+      --text-xs: 14px;
+      --text-lg: 24px;
+      --text-xl: 28px;
+      --text-2xl: 32px;
+      --text-3xl: 48px;
+
+      --leading-tight: 1.25;
+      --leading-normal: 1.85;
+      --leading-relaxed: 1.70;
+    }
+
+    @page {
+      size: A4;
+      margin: 2cm 1.8cm 2.5cm 1.8cm;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-sans);
+      font-size: var(--text-base);
+      line-height: var(--leading-normal);
+      color: var(--text-primary);
+      background-color: var(--parchment);
+      background-image:
+        repeating-linear-gradient(
+          120deg,
+          transparent,
+          transparent 2px,
+          rgba(139, 119, 90, 0.015) 2px,
+          rgba(139, 119, 90, 0.015) 3px
+        ),
+        radial-gradient(
+          ellipse at 20% 50%,
+          rgba(201, 100, 66, 0.03) 0%,
+          transparent 70%
+        ),
+        radial-gradient(
+          ellipse at 80% 20%,
+          rgba(184, 134, 11, 0.02) 0%,
+          transparent 60%
+        );
+      max-width: 1060px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      color: var(--near-black);
+    }
+
+    /* ===== 封面 ===== */
+    .cover {
+      position: relative;
+      padding: 5rem 3rem 4rem;
+      text-align: center;
+      page-break-after: always;
+      break-after: page;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .cover::before {
+      content: "";
+      position: absolute;
+      top: 1.5rem; left: 1.5rem; right: 1.5rem; bottom: 1.5rem;
+      border: 1.5px solid var(--terracotta);
+      border-radius: 4px;
+      opacity: 0.4;
+    }
+    .cover::after {
+      content: "";
+      position: absolute;
+      top: 2rem; left: 2rem; right: 2rem; bottom: 2rem;
+      border: 0.5px solid var(--terracotta);
+      border-radius: 2px;
+      opacity: 0.25;
+    }
+
+    .cover-icon {
+      margin-bottom: 2rem;
+    }
+    .cover-icon svg {
+      width: 80px;
+      height: 80px;
+      color: var(--terracotta);
+      opacity: 0.6;
+    }
+
+    .cover-subtitle {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 1.5rem;
+    }
+    .cover-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 5vw, var(--text-3xl));
+      font-weight: 900;
+      color: var(--near-black);
+      margin-bottom: 0.5rem;
+      line-height: var(--leading-tight);
+    }
+    .cover-title-en {
+      font-family: var(--font-serif);
+      font-size: var(--text-lg);
+      font-weight: 400;
+      color: var(--text-tertiary);
+      margin-bottom: 2rem;
+      letter-spacing: 0.05em;
+    }
+    .cover-resorts {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2.5rem 0;
+      flex-wrap: wrap;
+    }
+    .cover-resort-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5em;
+      font-family: var(--font-sans);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--text-secondary);
+      padding: 0.5em 1.2em;
+      background: var(--ivory);
+      border: 1px solid var(--border-cream);
+      border-radius: 24px;
+    }
+    .cover-resort-chip .ti { color: var(--snow-blue); font-size: 1.1em; }
+
+    .cover-meta {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--text-tertiary);
+      margin-top: 2rem;
+    }
+
+    /* ===== 裝飾分隔線 ===== */
+    .divider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin: 3rem 0;
+      color: var(--border-warm);
+    }
+    .divider-line {
+      flex: 1;
+      max-width: 120px;
+      height: 1px;
+      background: var(--border-warm);
+    }
+    .divider-diamond {
+      color: var(--terracotta);
+      opacity: 0.5;
+      font-size: 0.6rem;
+    }
+
+    /* ===== 章節標題 ===== */
+    .section-header {
+      text-align: center;
+      margin: 3rem 0 2rem;
+    }
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4em;
+      background: var(--terracotta);
+      color: var(--ivory);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      padding: 0.3em 1em;
+      border-radius: 3px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-size: var(--text-2xl);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .section-subtitle {
+      font-size: var(--text-sm);
+      color: var(--text-tertiary);
+      font-family: var(--font-sans);
+      font-weight: 300;
+    }
+
+    /* ===== 比較表格 ===== */
+    .comparison-table-wrapper {
+      overflow-x: auto;
+      margin: 2rem 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    table.comparison {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--ivory);
+      font-size: var(--text-sm);
+    }
+    table.comparison thead th {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      padding: 1.1rem 0.8rem;
+      text-align: center;
+      border-bottom: 2px solid var(--terracotta);
+      color: var(--near-black);
+      background: rgba(201, 100, 66, 0.06);
+      position: sticky;
+      top: 0;
+    }
+    table.comparison thead th:first-child {
+      text-align: left;
+      padding-left: 1.2rem;
+      width: 140px;
+      min-width: 120px;
+    }
+    table.comparison thead th .resort-name-ja {
+      display: block;
+      font-size: 1.05em;
+    }
+    table.comparison thead th .resort-name-en {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.68em;
+      font-weight: 400;
+      color: var(--text-tertiary);
+      margin-top: 0.2em;
+      letter-spacing: 0.05em;
+    }
+
+    table.comparison tbody td {
+      padding: 0.85rem 0.75rem;
+      border-bottom: 1px solid var(--border-cream);
+      text-align: center;
+      vertical-align: top;
+      line-height: 1.6;
+    }
+    table.comparison tbody td:first-child {
+      text-align: left;
+      padding-left: 1.2rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: rgba(232, 230, 220, 0.3);
+    }
+    table.comparison tbody td:first-child .ti {
+      color: var(--terracotta);
+      margin-right: 0.4em;
+      font-size: 1.1em;
+      vertical-align: -1px;
+    }
+    table.comparison tbody tr:hover td {
+      background: rgba(201, 100, 66, 0.03);
+    }
+    table.comparison tbody tr:hover td:first-child {
+      background: rgba(201, 100, 66, 0.06);
+    }
+
+    /* 分組行 */
+    table.comparison tbody tr.group-header td {
+      background: rgba(201, 100, 66, 0.08);
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: 0.95em;
+      color: var(--terracotta);
+      padding: 0.7rem 0.8rem 0.7rem 1.2rem;
+      border-bottom: 1px solid rgba(201, 100, 66, 0.2);
+      letter-spacing: 0.05em;
+    }
+
+    /* 高亮格 */
+    .highlight {
+      color: var(--terracotta);
+      font-weight: 600;
+    }
+    .best {
+      position: relative;
+    }
+    .best::after {
+      content: "Best";
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      background: var(--terracotta);
+      color: var(--ivory);
+      padding: 0.1em 0.5em;
+      border-radius: 2px;
+      margin-left: 0.5em;
+      vertical-align: middle;
+      text-transform: uppercase;
+    }
+
+    /* 星級評分 */
+    .stars {
+      color: var(--food-amber);
+      letter-spacing: 0.1em;
+    }
+
+    /* 標籤 */
+    .tag {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      padding: 0.15em 0.6em;
+      border-radius: 3px;
+      margin: 0.15em;
+      letter-spacing: 0.05em;
+    }
+    .tag-blue { background: rgba(74, 124, 138, 0.12); color: var(--route-blue); }
+    .tag-amber { background: rgba(184, 134, 11, 0.12); color: var(--food-amber); }
+    .tag-olive { background: rgba(107, 124, 94, 0.12); color: var(--stay-olive); }
+    .tag-coral { background: rgba(217, 119, 87, 0.10); color: var(--coral); }
+    .tag-sage { background: rgba(143, 188, 143, 0.15); color: #5a8a5a; }
+
+    /* ===== 雪場簡介卡片 ===== */
+    .resort-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.2rem;
+      margin: 2rem 0;
+    }
+    .resort-card {
+      position: relative;
+      background: var(--ivory);
+      border: 1px solid var(--border-cream);
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .resort-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 24px; height: 24px;
+      border-top: 2px solid var(--terracotta);
+      border-left: 2px solid var(--terracotta);
+      border-top-left-radius: 12px;
+      opacity: 0.4;
+    }
+    .resort-card::after {
+      content: "";
+      position: absolute;
+      bottom: 0; right: 0;
+      width: 24px; height: 24px;
+      border-bottom: 2px solid var(--terracotta);
+      border-right: 2px solid var(--terracotta);
+      border-bottom-right-radius: 12px;
+      opacity: 0.4;
+    }
+    .resort-card-header {
+      margin-bottom: 1.2rem;
+    }
+    .resort-card-name {
+      font-family: var(--font-serif);
+      font-size: var(--text-lg);
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+    .resort-card-name-en {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--text-tertiary);
+      letter-spacing: 0.05em;
+    }
+    .resort-card-tagline {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      margin-top: 0.8rem;
+      line-height: 1.7;
+      font-style: italic;
+    }
+    .resort-card-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+    }
+    .resort-stat {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      font-size: var(--text-xs);
+      color: var(--text-secondary);
+    }
+    .resort-stat .ti {
+      color: var(--snow-blue);
+      font-size: 1.2em;
+    }
+    .resort-stat-value {
+      font-family: var(--font-mono);
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    /* ===== 推薦摘要 ===== */
+    .recommendation-box {
+      background: var(--ivory);
+      border: 1px solid var(--border-cream);
+      border-left: 4px solid var(--terracotta);
+      border-radius: 0 10px 10px 0;
+      padding: 2rem;
+      margin: 2rem 0;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .recommendation-box h3 {
+      font-size: var(--text-lg);
+      margin-bottom: 1.2rem;
+      color: var(--terracotta);
+    }
+    .recommendation-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid var(--border-cream);
+    }
+    .recommendation-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .recommendation-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(201, 100, 66, 0.08);
+      border-radius: 8px;
+      color: var(--terracotta);
+      font-size: 1.2rem;
+    }
+    .recommendation-content h4 {
+      font-family: var(--font-sans);
+      font-size: var(--text-base);
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    .recommendation-content p {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ===== 提示框 ===== */
+    .tips-box {
+      background: rgba(160, 82, 45, 0.06);
+      border-left: 3px solid var(--alert-rust);
+      border-radius: 0 8px 8px 0;
+      padding: 1.2rem 1.5rem;
+      margin: 2rem 0;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .tips-box h4 {
+      font-family: var(--font-sans);
+      font-weight: 600;
+      color: var(--alert-rust);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4em;
+    }
+    .tips-box p, .tips-box li {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .tips-box ul {
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    .tips-box li {
+      margin-bottom: 0.3rem;
+    }
+
+    /* ===== 頁尾 ===== */
+    .footer {
+      text-align: center;
+      padding: 3rem 0;
+      margin-top: 2rem;
+      border-top: 1px solid var(--border-cream);
+    }
+    .footer-text {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--text-tertiary);
+      letter-spacing: 0.05em;
+    }
+    .footer-quote {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+
+    /* ===== 交通路線圖 ===== */
+    .transport-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .route-card {
+      position: relative;
+      background: var(--ivory);
+      border: 1px solid var(--border-cream);
+      border-radius: 12px;
+      padding: 2rem;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .route-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 24px; height: 24px;
+      border-top: 2px solid var(--route-blue);
+      border-left: 2px solid var(--route-blue);
+      border-top-left-radius: 12px;
+      opacity: 0.4;
+    }
+    .route-card::after {
+      content: "";
+      position: absolute;
+      bottom: 0; right: 0;
+      width: 24px; height: 24px;
+      border-bottom: 2px solid var(--route-blue);
+      border-right: 2px solid var(--route-blue);
+      border-bottom-right-radius: 12px;
+      opacity: 0.4;
+    }
+    .route-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 1.5rem;
+    }
+    .route-card-icon {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(74, 124, 138, 0.10);
+      border-radius: 10px;
+      color: var(--route-blue);
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .route-card-title {
+      font-family: var(--font-serif);
+      font-size: var(--text-lg);
+      font-weight: 700;
+    }
+    .route-card-subtitle {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--text-tertiary);
+      letter-spacing: 0.05em;
+    }
+
+    /* 流程圖 */
+    .flow-diagram {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin: 1.2rem 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .flow-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3em;
+      padding: 0.6rem 0.8rem;
+      background: var(--parchment);
+      border: 1px solid var(--border-cream);
+      border-radius: 8px;
+      min-width: 80px;
+      text-align: center;
+    }
+    .flow-node-icon {
+      font-size: 1.3rem;
+      color: var(--route-blue);
+    }
+    .flow-node-name {
+      font-family: var(--font-sans);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+    .flow-node-sub {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-tertiary);
+    }
+    .flow-node.flow-start {
+      background: rgba(74, 124, 138, 0.10);
+      border-color: var(--route-blue);
+    }
+    .flow-node.flow-end {
+      background: rgba(201, 100, 66, 0.08);
+      border-color: var(--terracotta);
+    }
+    .flow-node.flow-end .flow-node-icon { color: var(--terracotta); }
+    .flow-arrow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      padding: 0 0.3rem;
+      color: var(--text-tertiary);
+      flex-shrink: 0;
+    }
+    .flow-arrow-line {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+    .flow-arrow-label {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--route-blue);
+      white-space: nowrap;
+      background: rgba(74, 124, 138, 0.08);
+      padding: 0.1em 0.4em;
+      border-radius: 3px;
+      margin-bottom: 0.2em;
+    }
+    .flow-arrow-sub {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      color: var(--text-tertiary);
+      white-space: nowrap;
+    }
+
+    /* 交通詳細表 */
+    table.transport {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: var(--text-xs);
+      margin-top: 1rem;
+    }
+    table.transport thead th {
+      font-family: var(--font-sans);
+      font-weight: 600;
+      font-size: var(--text-xs);
+      padding: 0.6rem 0.8rem;
+      text-align: left;
+      border-bottom: 2px solid var(--route-blue);
+      color: var(--route-blue);
+      background: rgba(74, 124, 138, 0.05);
+    }
+    table.transport tbody td {
+      padding: 0.6rem 0.8rem;
+      border-bottom: 1px solid var(--border-cream);
+      vertical-align: top;
+      line-height: 1.6;
+    }
+    table.transport tbody tr:last-child td {
+      border-bottom: none;
+    }
+    table.transport .transport-method {
+      font-weight: 600;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.4em;
+    }
+    table.transport .transport-method .ti {
+      color: var(--route-blue);
+    }
+    .transport-note {
+      font-size: 0.75rem;
+      color: var(--text-tertiary);
+      font-style: italic;
+      margin-top: 0.3em;
+    }
+    .transport-price {
+      font-family: var(--font-mono);
+      font-weight: 500;
+      color: var(--food-amber);
+    }
+    .transport-time {
+      font-family: var(--font-mono);
+      font-weight: 500;
+      color: var(--route-blue);
+    }
+    .transport-recommend {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3em;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      background: rgba(201, 100, 66, 0.10);
+      color: var(--terracotta);
+      padding: 0.15em 0.5em;
+      border-radius: 3px;
+      letter-spacing: 0.05em;
+    }
+
+    /* 住宿提示卡 */
+    .stay-note {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      background: rgba(107, 124, 94, 0.06);
+      border-left: 3px solid var(--stay-olive);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.2rem;
+      margin-top: 1rem;
+    }
+    .stay-note-icon {
+      flex-shrink: 0;
+      color: var(--stay-olive);
+      font-size: 1.2rem;
+      margin-top: 0.1rem;
+    }
+    .stay-note-text {
+      font-size: var(--text-xs);
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .stay-note-text strong {
+      color: var(--stay-olive);
+    }
+
+    /* ===== 預算比較專區 ===== */
+    .budget-overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.2rem;
+      margin: 2rem 0;
+    }
+    .budget-overview-card {
+      background: var(--ivory);
+      border: 1px solid var(--border-cream);
+      border-radius: 12px;
+      padding: 1.6rem 1.4rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .budget-overview-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .budget-overview-card.best-budget {
+      border: 2px solid var(--stay-olive);
+      background: rgba(107, 124, 94, 0.04);
+    }
+    .budget-overview-card.best-budget::before {
+      content: "TOP 1 最省首選";
+      position: absolute;
+      top: -11px;
+      right: 14px;
+      background: var(--stay-olive);
+      color: #fff;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 0.15em 0.6em;
+      border-radius: 10px;
+      letter-spacing: 0.05em;
+    }
+    .budget-card-title {
+      font-family: var(--font-serif);
+      font-size: var(--text-base);
+      font-weight: 700;
+      color: var(--near-black);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.3rem;
+    }
+    .budget-card-sub {
+      font-size: 0.75rem;
+      color: var(--text-tertiary);
+      margin-bottom: 1rem;
+    }
+    .budget-card-price-main {
+      font-family: var(--font-mono);
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--terracotta);
+      line-height: 1.1;
+    }
+    .budget-card-price-sub {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-top: 0.3rem;
+    }
+    .budget-breakdown-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.2rem 0 0;
+      border-top: 1px dashed var(--border-cream);
+      padding-top: 0.8rem;
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+    }
+    .budget-breakdown-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.4rem;
+    }
+    .budget-breakdown-item span:first-child {
+      color: var(--text-tertiary);
+    }
+    .budget-breakdown-item span:last-child {
+      font-family: var(--font-mono);
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+    .budget-note-box {
+      background: rgba(184, 134, 11, 0.06);
+      border-left: 3px solid var(--food-amber);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.2rem;
+      margin: 1.5rem 0;
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .budget-note-box strong {
+      color: var(--near-black);
+    }
+
+    /* ===== 響應式 ===== */
+    @media (max-width: 768px) {
+      body { padding: 0 1rem; }
+      .cover { padding: 3rem 1.5rem; }
+      .cover-resorts { gap: 0.8rem; }
+      table.comparison { font-size: var(--text-xs); }
+      table.comparison thead th,
+      table.comparison tbody td { padding: 0.6rem 0.5rem; }
+      .resort-cards { grid-template-columns: 1fr; }
+      .flow-diagram { gap: 0.2rem; }
+      .flow-node { min-width: 60px; padding: 0.4rem 0.5rem; }
+      .flow-node-name { font-size: 0.7rem; }
+    }
+
+    /* ===== 打印適配 ===== */
+    @media print {
+      body { font-size: 11.5pt; color: var(--text-primary); max-width: 100%; padding: 0; }
+      .comparison-table-wrapper { box-shadow: none; }
+      table.comparison, .resort-card, .recommendation-box, .tips-box, .route-card {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      table.comparison thead th { position: static; }
+      p, li { orphans: 3; widows: 3; }
+      h2, h3 { break-after: avoid; }
+      .resort-card, .recommendation-box, .tips-box, .route-card { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== 封面 ===== -->
+  <div class="cover">
+    <div class="cover-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2l-4 9h8l-4 -9"/>
+        <path d="M6.5 11l-2.5 7h16l-2.5 -7"/>
+        <path d="M3 18h18"/>
+        <path d="M9.5 4l-5 14"/>
+        <path d="M14.5 4l5 14"/>
+        <path d="M12 2v16"/>
+      </svg>
+    </div>
+    <div class="cover-subtitle">Hokkaido Ski Resort Comparison</div>
+    <h1 class="cover-title">北海道滑雪場比較指南</h1>
+    <div class="cover-title-en">Rusutsu &#183; Furano &#183; Kamui &#183; Sapporo Teine</div>
+
+    <div class="cover-resorts">
+      <span class="cover-resort-chip"><i class="ti ti-snowflake"></i> 留壽都</span>
+      <span class="cover-resort-chip"><i class="ti ti-snowflake"></i> 富良野</span>
+      <span class="cover-resort-chip"><i class="ti ti-snowflake"></i> 神居</span>
+      <span class="cover-resort-chip"><i class="ti ti-snowflake"></i> 札幌手稻</span>
+    </div>
+
+    <div class="cover-meta">2025&#8211;2026 &#38634;&#23395; &#183; &#38634;&#22580;&#36039;&#26009;&#32156;&#21512;&#23565;&#29031;</div>
+  </div>
+
+  <!-- ===== 雪場簡介 ===== -->
+  <div class="section-header">
+    <div class="section-badge"><i class="ti ti-mountain"></i> RESORT PROFILES</div>
+    <h2 class="section-title">四大雪場一覽</h2>
+    <p class="section-subtitle">各具特色的北海道粉雪體驗</p>
+  </div>
+
+  <div class="resort-cards">
+    <!-- 留壽都 -->
+    <div class="resort-card">
+      <div class="resort-card-header">
+        <div class="resort-card-name">留壽都度假村</div>
+        <div class="resort-card-name-en">Rusutsu Resort</div>
+      </div>
+      <p class="resort-card-tagline">&#12300;三山環抱，粉雪聖殿&#12301;&#8212;&#8212;北海道規模最大的綜合滑雪度假村，以頂級乾粉雪&#12300;Rupow&#12301;聞名世界。</p>
+      <div class="resort-card-stats">
+        <div class="resort-stat"><i class="ti ti-route"></i> <span class="resort-stat-value">37</span> 條雪道</div>
+        <div class="resort-stat"><i class="ti ti-dimensions"></i> <span class="resort-stat-value">212ha</span></div>
+        <div class="resort-stat"><i class="ti ti-aerial-lift"></i> <span class="resort-stat-value">18</span> 座纜車</div>
+        <div class="resort-stat"><i class="ti ti-arrow-bar-up"></i> <span class="resort-stat-value">609m</span> 落差</div>
+      </div>
+    </div>
+
+    <!-- 富良野 -->
+    <div class="resort-card">
+      <div class="resort-card-header">
+        <div class="resort-card-name">富良野滑雪場</div>
+        <div class="resort-card-name-en">Furano Ski Resort</div>
+      </div>
+      <p class="resort-card-tagline">&#12300;世界盃級雪道，十勝岳絕景&#12301;&#8212;&#8212;曾舉辦 FIS 世界盃的北海道經典名場，粉雪乾爽、雪季超長。</p>
+      <div class="resort-card-stats">
+        <div class="resort-stat"><i class="ti ti-route"></i> <span class="resort-stat-value">28</span> 條雪道</div>
+        <div class="resort-stat"><i class="ti ti-dimensions"></i> <span class="resort-stat-value">194ha</span></div>
+        <div class="resort-stat"><i class="ti ti-aerial-lift"></i> <span class="resort-stat-value">11</span> 座纜車</div>
+        <div class="resort-stat"><i class="ti ti-arrow-bar-up"></i> <span class="resort-stat-value">839m</span> 落差</div>
+      </div>
+    </div>
+
+    <!-- 神居 -->
+    <div class="resort-card">
+      <div class="resort-card-header">
+        <div class="resort-card-name">神居滑雪場</div>
+        <div class="resort-card-name-en">Kamui Ski Links</div>
+      </div>
+      <p class="resort-card-tagline">&#12300;隱藏版粉雪秘境，高CP值首選&#12301;&#8212;&#8212;旭川近郊的在地雪場，絲滑粉雪、人少隊短、價格親民。</p>
+      <div class="resort-card-stats">
+        <div class="resort-stat"><i class="ti ti-route"></i> <span class="resort-stat-value">25</span> 條雪道</div>
+        <div class="resort-stat"><i class="ti ti-dimensions"></i> <span class="resort-stat-value">110ha</span></div>
+        <div class="resort-stat"><i class="ti ti-aerial-lift"></i> <span class="resort-stat-value">6</span> 座纜車</div>
+        <div class="resort-stat"><i class="ti ti-arrow-bar-up"></i> <span class="resort-stat-value">601m</span> 落差</div>
+      </div>
+    </div>
+
+    <!-- 札幌手稻 -->
+    <div class="resort-card">
+      <div class="resort-card-header">
+        <div class="resort-card-name">札幌手稻滑雪場</div>
+        <div class="resort-card-name-en">Sapporo Teine</div>
+      </div>
+      <p class="resort-card-tagline">&#12300;冬奧傳奇賽道，石狩灣與札幌夜景&#12301;&#8212;&#8212;離市區最近的千米名場，兼具 36&#176; 北壁極限陡坡與 6km 景觀初學長道。</p>
+      <div class="resort-card-stats">
+        <div class="resort-stat"><i class="ti ti-route"></i> <span class="resort-stat-value">15</span> 條雪道</div>
+        <div class="resort-stat"><i class="ti ti-dimensions"></i> <span class="resort-stat-value">76ha</span></div>
+        <div class="resort-stat"><i class="ti ti-aerial-lift"></i> <span class="resort-stat-value">9</span> 座纜車</div>
+        <div class="resort-stat"><i class="ti ti-arrow-bar-up"></i> <span class="resort-stat-value">683m</span> 落差</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 裝飾分隔線 ===== -->
+  <div class="divider">
+    <span class="divider-line"></span>
+    <span class="divider-diamond">&#9830;</span>
+    <span class="divider-line"></span>
+  </div>
+
+  <!-- ===== 核心比較表 ===== -->
+  <div class="section-header">
+    <div class="section-badge"><i class="ti ti-table"></i> COMPARISON</div>
+    <h2 class="section-title">全方位對照表</h2>
+    <p class="section-subtitle">一表看懂四大雪場的優劣勢</p>
+  </div>
+
+  <div class="comparison-table-wrapper">
+    <table class="comparison">
+      <thead>
+        <tr>
+          <th>比較項目</th>
+          <th>
+            <span class="resort-name-ja">留壽都</span>
+            <span class="resort-name-en">Rusutsu</span>
+          </th>
+          <th>
+            <span class="resort-name-ja">富良野</span>
+            <span class="resort-name-en">Furano</span>
+          </th>
+          <th>
+            <span class="resort-name-ja">神居</span>
+            <span class="resort-name-en">Kamui</span>
+          </th>
+          <th>
+            <span class="resort-name-ja">札幌手稻</span>
+            <span class="resort-name-en">Teine</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 基本規模 -->
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-mountain"></i> 基本規模</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-route"></i> 雪道數</td>
+          <td class="highlight best">37 條</td>
+          <td>28 條</td>
+          <td>25 條</td>
+          <td>15 條</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-dimensions"></i> 可滑面積</td>
+          <td class="highlight best">212 ha</td>
+          <td>194 ha</td>
+          <td>110 ha</td>
+          <td>76 ha</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-aerial-lift"></i> 纜車數</td>
+          <td class="highlight best">18 座</td>
+          <td>11 座</td>
+          <td>6 座</td>
+          <td>9 座（含箱式）</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-arrow-bar-up"></i> 最高海拔</td>
+          <td>1,009 m</td>
+          <td class="highlight best">1,074 m</td>
+          <td>751 m</td>
+          <td>1,023 m</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-arrows-vertical"></i> 垂直落差</td>
+          <td>609 m</td>
+          <td class="highlight best">839 m</td>
+          <td>601 m</td>
+          <td>683 m</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-ruler-measure"></i> 最長滑行距離</td>
+          <td>約 3,500 m</td>
+          <td>4,000 m</td>
+          <td>約 2,000 m</td>
+          <td class="highlight best">約 6,000 m<br><span style="font-size: 0.8em; color: var(--text-tertiary);">彩虹步道</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-mountains"></i> 山體構成</td>
+          <td>三山（西山&#183;東山&#183;伊索拉山）</td>
+          <td>兩區（富良野區&#183;北之峰區）</td>
+          <td>單山體</td>
+          <td>兩區（高地區&#183;奧林匹亞區）</td>
+        </tr>
+
+        <!-- 雪道難度 -->
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-chart-pie"></i> 雪道難度分佈</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-circle-check"></i> 初級</td>
+          <td>30%</td>
+          <td class="highlight best">40%</td>
+          <td>30%</td>
+          <td>35%</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-square-check"></i> 中級</td>
+          <td class="highlight best">40%</td>
+          <td class="highlight">40%</td>
+          <td>38%</td>
+          <td class="highlight">40%</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-diamond"></i> 高級</td>
+          <td>30%</td>
+          <td>20%</td>
+          <td class="highlight best">32%</td>
+          <td>25%<br><span style="font-size: 0.8em; color: var(--text-tertiary);">含冬奧北壁 36&#176;</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-trees"></i> 非壓雪 / 樹林區</td>
+          <td>&#9733;&#9733;&#9733;&#9733; 伊索拉山為主</td>
+          <td>&#9733;&#9733;&#9733; 部分區域</td>
+          <td class="highlight best">&#9733;&#9733;&#9733;&#9733;&#9733; 32% 非壓雪</td>
+          <td>&#9733;&#9733;&#9733;&#9733; 北壁野雪區</td>
+        </tr>
+
+        <!-- 雪季與營運 -->
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-calendar"></i> 雪季與營運</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-calendar-event"></i> 雪季期間</td>
+          <td>11 月下旬 &#8211; 3 月底</td>
+          <td class="highlight best">11 月下旬 &#8211; 5 月初</td>
+          <td>12 月中旬 &#8211; 3 月底</td>
+          <td class="highlight best">11 月下旬 &#8211; 5 月初<br><span style="font-size: 0.8em; color: var(--text-tertiary);">高地區春滑</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-moon"></i> 夜間滑雪</td>
+          <td>&#10004; 西山區域</td>
+          <td>&#10004; 部分時段</td>
+          <td>&#10008; 無</td>
+          <td class="highlight best">&#10004; 奧林匹亞區<br><span style="font-size: 0.8em; color: var(--text-tertiary);">俯瞰市區夜景</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-clock"></i> 營業時間</td>
+          <td>09:00 &#8211; 20:00（含夜滑）</td>
+          <td>08:30 &#8211; 19:30（含夜滑）</td>
+          <td>09:00 &#8211; 17:00</td>
+          <td>09:00 &#8211; 21:00（含夜滑）</td>
+        </tr>
+
+        <!-- 票價 -->
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-ticket"></i> 票價（2025&#8211;2026 參考）</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-cash"></i> 成人一日券<br><span style="font-size: 0.8em; color: var(--text-tertiary);">現場購票</span></td>
+          <td>&#165;16,200 &#8211; 16,700</td>
+          <td>&#165;8,000</td>
+          <td class="highlight best">&#165;5,300</td>
+          <td>&#165;9,400<br><span style="font-size: 0.8em; color: var(--text-tertiary);">含夜滑</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-discount-2"></i> 成人一日券<br><span style="font-size: 0.8em; color: var(--text-tertiary);">線上預購</span></td>
+          <td>&#165;12,000 &#8211; 13,200</td>
+          <td>&#165;6,600（會員價）</td>
+          <td class="highlight best">&#165;5,300</td>
+          <td>&#165;8,400</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-baby-carriage"></i> 兒童票</td>
+          <td>&#165;5,800 &#8211; 8,000</td>
+          <td class="highlight best">免費（小學以下）</td>
+          <td>&#165;1,800</td>
+          <td>&#165;5,200 &#8211; 6,200<br><span style="font-size: 0.8em; color: var(--text-tertiary);">4&#8211;12 歲</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-star"></i> 特色票券</td>
+          <td><span class="tag tag-coral">25 小時券</span><br><span class="tag tag-blue">Epic Pass</span></td>
+          <td><span class="tag tag-amber">3h / 5h 券</span><br><span class="tag tag-olive">Prince 會員</span></td>
+          <td><span class="tag tag-sage">半日券</span></td>
+          <td><span class="tag tag-blue">5 小時券</span><br><span class="tag tag-coral">25 小時券</span><br><span class="tag tag-amber">巴士套票</span></td>
+        </tr>
+
+        <!-- 雪質與體驗 -->
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-snowflake"></i> 雪質與體驗</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-snowflake"></i> 粉雪品質</td>
+          <td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>&#12300;Rupow&#12301;極致乾粉</td>
+          <td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>內陸型高品質乾粉</td>
+          <td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>&#12300;Silky Powder&#12301;</td>
+          <td><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>海風乾粉&#183;千米海拔</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-users"></i> 擁擠程度</td>
+          <td>旺季較擁擠（國際客多）</td>
+          <td>適中</td>
+          <td class="highlight best">人少隊短，暢滑</td>
+          <td>週末市區客多&#183;平日舒適</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-eye"></i> 山頂景觀</td>
+          <td>羊蹄山&#183;洞爺湖</td>
+          <td>十勝岳連峰&#183;富良野盆地</td>
+          <td>石狩平原&#183;大雪山連峰</td>
+          <td class="highlight best">石狩灣海景&#183;札幌市景</td>
+        </tr>
+
+        <!-- 設施與住宿 -->
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-building-estate"></i> 設施與住宿</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-building-skyscraper"></i> Ski-in / Ski-out</td>
+          <td class="highlight best">&#10004; 留壽都度假酒店&#183;威斯汀</td>
+          <td>&#10004; 新富良野王子大飯店</td>
+          <td>&#10008; 無（住旭川市區）</td>
+          <td>&#10008; 無（住札幌市區）</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-pool"></i> 度假設施</td>
+          <td class="highlight best">溫泉&#183;室內樂園&#183;餐廳群</td>
+          <td>溫泉&#183;Snow Land&#183;餐廳</td>
+          <td>基本設施</td>
+          <td>餐廳&#183;租借&#183;恐龍樂園</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-tools-kitchen-2"></i> 餐飲亮點</td>
+          <td>多國料理餐廳群</td>
+          <td>富良野乳製品&#183;咖哩</td>
+          <td class="highlight">山頂窯烤披薩 Mt.751&#183;旭川拉麵</td>
+          <td>奧林匹亞餐廳&#183;札幌拉麵</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-school"></i> 滑雪課程</td>
+          <td>&#10004; 中&#183;英&#183;日語</td>
+          <td>&#10004; 多語言</td>
+          <td>&#10004; 日&#183;英語</td>
+          <td>&#10004; 中&#183;英&#183;日語</td>
+        </tr>
+
+        <!-- 交通 -->
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-bus"></i> 交通方式</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-plane"></i> 最近機場</td>
+          <td>新千歲機場（CTS）</td>
+          <td>旭川機場（AKJ）</td>
+          <td>旭川機場（AKJ）</td>
+          <td>新千歲機場（CTS）</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-clock"></i> 機場車程</td>
+          <td>約 120 分鐘（巴士）</td>
+          <td>約 80 分鐘（巴士）</td>
+          <td>約 75 分鐘（巴士轉乘）</td>
+          <td class="highlight best">約 70&#8211;80 分鐘<br><span style="font-size: 0.8em; color: var(--text-tertiary);">JR快速+巴士</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-map-pin"></i> 距札幌</td>
+          <td>約 90 分鐘（直達巴士）</td>
+          <td>約 2.5 小時（JR&#183;巴士）</td>
+          <td>約 2.5 小時（JR 至旭川+巴士）</td>
+          <td class="highlight best">約 40&#8211;50 分鐘<br><span style="font-size: 0.8em; color: var(--text-tertiary);">JR+巴士直達</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-bus"></i> 接駁服務</td>
+          <td><span class="tag tag-blue">Big Runs Bus</span><br><span class="tag tag-blue">Resort Liner</span></td>
+          <td><span class="tag tag-blue">Resort Liner</span><br><span class="tag tag-blue">Lavender Bus</span></td>
+          <td><span class="tag tag-blue">旭川市內接駁</span></td>
+          <td><span class="tag tag-blue">JR 巴士手70</span><br><span class="tag tag-blue">Bigruns 套票</span></td>
+        </tr>
+
+        <!-- 適合對象 -->
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-heart"></i> 適合對象</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-target"></i> 最適合誰</td>
+          <td>
+            <span class="tag tag-coral">豪華度假</span>
+            <span class="tag tag-coral">家庭出遊</span>
+            <span class="tag tag-coral">初&#8211;中級</span>
+          </td>
+          <td>
+            <span class="tag tag-amber">深度滑雪</span>
+            <span class="tag tag-amber">長雪季</span>
+            <span class="tag tag-amber">全程度</span>
+          </td>
+          <td>
+            <span class="tag tag-sage">高CP值</span>
+            <span class="tag tag-sage">進階玩家</span>
+            <span class="tag tag-sage">粉雪獵人</span>
+          </td>
+          <td>
+            <span class="tag tag-blue">市區兼顧</span>
+            <span class="tag tag-coral">景觀夜滑</span>
+            <span class="tag tag-amber">當天往返</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ===== 裝飾分隔線 ===== -->
+  <div class="divider">
+    <span class="divider-line"></span>
+    <span class="divider-diamond">&#9830;</span>
+    <span class="divider-line"></span>
+  </div>
+
+  <!-- ===== 交通比較專區 ===== -->
+  <div class="section-header">
+    <div class="section-badge"><i class="ti ti-bus"></i> TRANSPORT GUIDE</div>
+    <h2 class="section-title">交通路線比較</h2>
+    <p class="section-subtitle">機場 &#8594; 雪場 &#183; 住宿 &#8594; 雪場&#12288;完整動線解析</p>
+  </div>
+
+  <div class="transport-flow">
+
+    <!-- ========== 留壽都 ========== -->
+    <div class="route-card">
+      <div class="route-card-header">
+        <div class="route-card-icon"><i class="ti ti-mountain"></i></div>
+        <div>
+          <div class="route-card-title">留壽都 Rusutsu</div>
+          <div class="route-card-subtitle">&#x4F4F;&#x5BBF;&#xFF1A;&#x96EA;&#x5834;&#x9644;&#x8FD1; Airbnb&#xFF08;&#x6CC9;&#x5DDD;&#x5340;&#x57DF;&#xFF09;</div>
+        </div>
+      </div>
+
+      <!-- 路線 A：機場 → 雪場 -->
+      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--route-blue); margin-bottom: 0.8rem;"><i class="ti ti-plane-arrival" style="margin-right: 0.3em;"></i> &#x6A5F;&#x5834; &#8594; &#x96EA;&#x5834;</h4>
+      <div class="flow-diagram">
+        <div class="flow-node flow-start">
+          <span class="flow-node-icon"><i class="ti ti-plane"></i></span>
+          <span class="flow-node-name">&#x65B0;&#x5343;&#x6B73;&#x6A5F;&#x5834;</span>
+          <span class="flow-node-sub">CTS</span>
+        </div>
+        <div class="flow-arrow">
+          <span class="flow-arrow-label">&#x76F4;&#x9054;&#x5DF4;&#x58EB;</span>
+          <span class="flow-arrow-line">&#8594;</span>
+          <span class="flow-arrow-sub">&#x7D04; 120 min</span>
+        </div>
+        <div class="flow-node flow-end">
+          <span class="flow-node-icon"><i class="ti ti-snowflake"></i></span>
+          <span class="flow-node-name">&#x7559;&#x58FD;&#x90FD;&#x5EA6;&#x5047;&#x6751;</span>
+          <span class="flow-node-sub">Rusutsu Resort</span>
+        </div>
+      </div>
+
+      <table class="transport">
+        <thead>
+          <tr>
+            <th>&#x4EA4;&#x901A;&#x65B9;&#x5F0F;</th>
+            <th>&#x6642;&#x9593;</th>
+            <th>&#x8CBB;&#x7528;&#xFF08;&#x55AE;&#x7A0B;&#xFF09;</th>
+            <th>&#x5099;&#x8A3B;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-bus"></i> Big Runs Bus</span> <span class="transport-recommend">&#x63A8;&#x85A6;</span></td>
+            <td><span class="transport-time">&#x7D04; 120 min</span></td>
+            <td><span class="transport-price">&#165;5,000&#8211;6,000</span></td>
+            <td>&#x5B8C;&#x5168;&#x9810;&#x7D04;&#x5236;&#xFF0C;&#x5EA6;&#x5047;&#x6751;&#x5BA2;&#x4EBA;&#x5C08;&#x5C6C;<br><span class="transport-note">&#x5EFA;&#x8B70;&#x63D0;&#x524D; 1&#8211;2 &#x9031;&#x9810;&#x7D04;</span></td>
+          </tr>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-bus"></i> Resort Liner</span></td>
+            <td><span class="transport-time">&#x7D04; 120 min</span></td>
+            <td><span class="transport-price">&#165;5,000&#8211;6,000</span></td>
+            <td>&#x591A;&#x689D;&#x8DEF;&#x7DDA;&#x3001;&#x73ED;&#x6B21;&#x8F03;&#x591A;&#xFF0C;&#x9700;&#x9810;&#x7D04;</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <!-- 路線 B：住宿 → 雪場 -->
+      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--stay-olive); margin: 1.5rem 0 0.8rem;"><i class="ti ti-home" style="margin-right: 0.3em;"></i> Airbnb &#8594; &#x96EA;&#x5834;</h4>
+      <div class="flow-diagram">
+        <div class="flow-node flow-start" style="background: rgba(107, 124, 94, 0.10); border-color: var(--stay-olive);">
+          <span class="flow-node-icon" style="color: var(--stay-olive);"><i class="ti ti-home"></i></span>
+          <span class="flow-node-name">&#x6CC9;&#x5DDD;&#x5340;&#x57DF; Airbnb</span>
+          <span class="flow-node-sub">&#x7559;&#x58FD;&#x90FD;&#x6751;</span>
+        </div>
+        <div class="flow-arrow">
+          <span class="flow-arrow-label" style="background: rgba(107, 124, 94, 0.10); color: var(--stay-olive);">&#x6B65;&#x884C;</span>
+          <span class="flow-arrow-line">&#8594;</span>
+          <span class="flow-arrow-sub">6&#8211;10 min</span>
+        </div>
+        <div class="flow-node flow-end">
+          <span class="flow-node-icon"><i class="ti ti-snowflake"></i></span>
+          <span class="flow-node-name">&#x7559;&#x58FD;&#x90FD;&#x96EA;&#x5834;</span>
+          <span class="flow-node-sub">&#x897F;&#x5C71;&#x7E9C;&#x8ECA;&#x7AD9;</span>
+        </div>
+      </div>
+
+      <div class="stay-note">
+        <span class="stay-note-icon"><i class="ti ti-info-circle"></i></span>
+        <div class="stay-note-text">
+          <strong>&#x4F4F;&#x5BBF;&#x63D0;&#x793A;&#xFF1A;</strong>&#x6CC9;&#x5DDD;&#x5340;&#x57DF;&#x7684; Airbnb &#x6728;&#x5C4B;&#x5225;&#x5885;&#xFF0C;&#x9810;&#x8A02;&#x6642;&#x52D9;&#x5FC5;&#x78BA;&#x8A8D;&#x8DDD;&#x96EA;&#x5834;<strong>&#x6B65;&#x884C;&#x8DDD;&#x96E2;</strong>&#xFF0C;&#x512A;&#x5148;&#x9078;&#x64C7;&#x6B65;&#x884C; 10 &#x5206;&#x9418;&#x5167;&#x53EF;&#x9054;&#x7E9C;&#x8ECA;&#x7AD9;&#x7684;&#x623F;&#x6E90;&#x3002;&#x7559;&#x58FD;&#x90FD;&#x6751;&#x5167;&#x7121;&#x5927;&#x578B;&#x8D85;&#x5E02;&#xFF0C;&#x5EFA;&#x8B70;&#x5728;&#x5DF4;&#x58EB;&#x4E2D;&#x9014;&#x63A1;&#x8CB7;&#x98DF;&#x6750;&#x3002;
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== 富良野 ========== -->
+    <div class="route-card">
+      <div class="route-card-header">
+        <div class="route-card-icon"><i class="ti ti-mountain"></i></div>
+        <div>
+          <div class="route-card-title">&#x5BCC;&#x826F;&#x91CE; Furano</div>
+          <div class="route-card-subtitle">&#x4F4F;&#x5BBF;&#xFF1A;&#x96EA;&#x5834;&#x9644;&#x8FD1; Airbnb&#xFF08;&#x5317;&#x4E4B;&#x5CF0;&#x5340;&#x57DF;&#xFF09;</div>
+        </div>
+      </div>
+
+      <!-- 路線 A：機場 → 雪場 -->
+      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--route-blue); margin-bottom: 0.8rem;"><i class="ti ti-plane-arrival" style="margin-right: 0.3em;"></i> &#x6A5F;&#x5834; &#8594; &#x96EA;&#x5834;</h4>
+      <div class="flow-diagram">
+        <div class="flow-node flow-start">
+          <span class="flow-node-icon"><i class="ti ti-plane"></i></span>
+          <span class="flow-node-name">&#x65ED;&#x5DDD;&#x6A5F;&#x5834;</span>
+          <span class="flow-node-sub">AKJ</span>
+        </div>
+        <div class="flow-arrow">
+          <span class="flow-arrow-label">&#x85B0;&#x8863;&#x8349;&#x865F;&#x5DF4;&#x58EB;</span>
+          <span class="flow-arrow-line">&#8594;</span>
+          <span class="flow-arrow-sub">&#x7D04; 80 min</span>
+        </div>
+        <div class="flow-node flow-end">
+          <span class="flow-node-icon"><i class="ti ti-snowflake"></i></span>
+          <span class="flow-node-name">&#x5BCC;&#x826F;&#x91CE;&#x96EA;&#x5834;</span>
+          <span class="flow-node-sub">Furano Ski Resort</span>
+        </div>
+      </div>
+
+      <table class="transport">
+        <thead>
+          <tr>
+            <th>&#x4EA4;&#x901A;&#x65B9;&#x5F0F;</th>
+            <th>&#x6642;&#x9593;</th>
+            <th>&#x8CBB;&#x7528;&#xFF08;&#x55AE;&#x7A0B;&#xFF09;</th>
+            <th>&#x5099;&#x8A3B;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-bus"></i> &#x85B0;&#x8863;&#x8349;&#x865F;&#xFF08;Lavender Bus&#xFF09;</span> <span class="transport-recommend">&#x63A8;&#x85A6;</span></td>
+            <td><span class="transport-time">&#x7D04; 80 min</span></td>
+            <td><span class="transport-price">&#165;790</span></td>
+            <td>&#x6BCF;&#x65E5;&#x7D04; 7 &#x73ED;&#x5F80;&#x8FD4;&#xFF0C;&#x514D;&#x9810;&#x7D04;&#x3001;&#x4E0A;&#x8ECA;&#x4ED8;&#x8CBB;<br><span class="transport-note">&#x53EF;&#x76F4;&#x9054;&#x65B0;&#x5BCC;&#x826F;&#x91CE;&#x738B;&#x5B50;&#x98EF;&#x5E97;&#x7B49;&#x96EA;&#x5834;&#x5468;&#x908A;</span></td>
+          </tr>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-train"></i> JR &#x8F49;&#x4E58;</span></td>
+            <td><span class="transport-time">&#x7D04; 110&#8211;120 min</span></td>
+            <td><span class="transport-price">&#165;1,100&#8211;1,600</span></td>
+            <td>&#x6A5F;&#x5834;&#x5DF4;&#x58EB; &#8594; &#x65ED;&#x5DDD;&#x7AD9;&#xFF08;35 min&#xFF09;&#8594; JR &#x5BCC;&#x826F;&#x91CE;&#x7DDA;&#xFF08;75 min&#xFF09;<br><span class="transport-note">&#x5BCC;&#x826F;&#x91CE;&#x7DDA;&#x4E0D;&#x652F;&#x63F4; IC &#x5361;&#xFF0C;&#x9700;&#x8CFC;&#x7D19;&#x672C;&#x8ECA;&#x7968;</span></td>
+          </tr>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-bus"></i> Resort Liner</span></td>
+            <td><span class="transport-time">&#x7D04; 60&#8211;80 min</span></td>
+            <td><span class="transport-price">&#165;3,000&#8211;5,000</span></td>
+            <td>&#x6ECB;&#x96EA;&#x5B63;&#x5C08;&#x7528;&#x9810;&#x7D04;&#x5236;&#x5DF4;&#x58EB;&#xFF0C;&#x53EF;&#x651C;&#x5E36;&#x96EA;&#x5177;</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <!-- 路線 B：住宿 → 雪場 -->
+      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--stay-olive); margin: 1.5rem 0 0.8rem;"><i class="ti ti-home" style="margin-right: 0.3em;"></i> Airbnb &#8594; &#x96EA;&#x5834;</h4>
+      <div class="flow-diagram">
+        <div class="flow-node flow-start" style="background: rgba(107, 124, 94, 0.10); border-color: var(--stay-olive);">
+          <span class="flow-node-icon" style="color: var(--stay-olive);"><i class="ti ti-home"></i></span>
+          <span class="flow-node-name">&#x5317;&#x4E4B;&#x5CF0;&#x5340;&#x57DF; Airbnb</span>
+          <span class="flow-node-sub">Kitanomine</span>
+        </div>
+        <div class="flow-arrow">
+          <span class="flow-arrow-label" style="background: rgba(107, 124, 94, 0.10); color: var(--stay-olive);">&#x6B65;&#x884C;</span>
+          <span class="flow-arrow-line">&#8594;</span>
+          <span class="flow-arrow-sub">5&#8211;10 min</span>
+        </div>
+        <div class="flow-node flow-end">
+          <span class="flow-node-icon"><i class="ti ti-snowflake"></i></span>
+          <span class="flow-node-name">&#x5317;&#x4E4B;&#x5CF0;&#x7E9C;&#x8ECA;&#x7AD9;</span>
+          <span class="flow-node-sub">Kitanomine Zone</span>
+        </div>
+      </div>
+
+      <div class="stay-note">
+        <span class="stay-note-icon"><i class="ti ti-info-circle"></i></span>
+        <div class="stay-note-text">
+          <strong>&#x4F4F;&#x5BBF;&#x63D0;&#x793A;&#xFF1A;</strong>&#x5317;&#x4E4B;&#x5CF0;&#x662F;&#x5BCC;&#x826F;&#x91CE;&#x6700;&#x71B1;&#x9580;&#x7684;&#x6C11;&#x5BBF;&#x5340;&#xFF0C;&#x591A;&#x6578;&#x623F;&#x6E90;&#x6B65;&#x884C;&#x5373;&#x53EF;&#x5230;&#x9054;&#x7E9C;&#x8ECA;&#x7AD9;&#xFF0C;&#x9910;&#x5EF3;&#x8207;&#x5546;&#x5E97;&#x6BD4;&#x5BCC;&#x826F;&#x91CE;&#x5340;&#x66F4;&#x8C50;&#x5BCC;&#x3002;&#x9810;&#x8A02;&#x6642;&#x6CE8;&#x610F;&#x5C71;&#x5761;&#x8DEF;&#x6BB5;&#xFF0C;&#x62D6;&#x884C;&#x674E;&#x5728;&#x96EA;&#x5730;&#x53EF;&#x80FD;&#x4E0D;&#x4FBF;&#xFF0C;&#x5EFA;&#x8B70;&#x4F7F;&#x7528;&#x96EA;&#x5730;&#x884C;&#x674E;&#x7BB1;&#x5957;&#x6216;&#x5148;&#x5BC4;&#x9001;&#x884C;&#x674E;&#x3002;
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== 神居 ========== -->
+    <div class="route-card">
+      <div class="route-card-header">
+        <div class="route-card-icon"><i class="ti ti-mountain"></i></div>
+        <div>
+          <div class="route-card-title">&#x795E;&#x5C45; Kamui</div>
+          <div class="route-card-subtitle">&#x4F4F;&#x5BBF;&#xFF1A;&#x65ED;&#x5DDD;&#x5E02;&#x5340;&#xFF08;JR &#x65ED;&#x5DDD;&#x7AD9;&#x5468;&#x908A;&#xFF09;</div>
+        </div>
+      </div>
+
+      <!-- 路線 A：機場 → 雪場 -->
+      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--route-blue); margin-bottom: 0.8rem;"><i class="ti ti-plane-arrival" style="margin-right: 0.3em;"></i> &#x6A5F;&#x5834; &#8594; &#x96EA;&#x5834;</h4>
+      <div class="flow-diagram">
+        <div class="flow-node flow-start">
+          <span class="flow-node-icon"><i class="ti ti-plane"></i></span>
+          <span class="flow-node-name">&#x65ED;&#x5DDD;&#x6A5F;&#x5834;</span>
+          <span class="flow-node-sub">AKJ</span>
+        </div>
+        <div class="flow-arrow">
+          <span class="flow-arrow-label">&#x6A5F;&#x5834;&#x5DF4;&#x58EB;</span>
+          <span class="flow-arrow-line">&#8594;</span>
+          <span class="flow-arrow-sub">&#x7D04; 35 min</span>
+        </div>
+        <div class="flow-node">
+          <span class="flow-node-icon"><i class="ti ti-building"></i></span>
+          <span class="flow-node-name">&#x65ED;&#x5DDD;&#x5E02;&#x5340;</span>
+          <span class="flow-node-sub">&#x653E;&#x884C;&#x674E; / Check-in</span>
+        </div>
+        <div class="flow-arrow">
+          <span class="flow-arrow-label">&#x9053;&#x5317;&#x5DF4;&#x58EB; 455</span>
+          <span class="flow-arrow-line">&#8594;</span>
+          <span class="flow-arrow-sub">&#x7D04; 40 min</span>
+        </div>
+        <div class="flow-node flow-end">
+          <span class="flow-node-icon"><i class="ti ti-snowflake"></i></span>
+          <span class="flow-node-name">&#x795E;&#x5C45;&#x96EA;&#x5834;</span>
+          <span class="flow-node-sub">Kamui Ski Links</span>
+        </div>
+      </div>
+
+      <div class="flow-diagram" style="margin-top: 0.5rem;">
+        <div class="flow-node flow-start">
+          <span class="flow-node-icon"><i class="ti ti-plane"></i></span>
+          <span class="flow-node-name">&#x65ED;&#x5DDD;&#x6A5F;&#x5834;</span>
+          <span class="flow-node-sub">AKJ</span>
+        </div>
+        <div class="flow-arrow">
+          <span class="flow-arrow-label">&#x6A5F;&#x5834;&#x76F4;&#x9054;&#x5DF4;&#x58EB;</span>
+          <span class="flow-arrow-line">&#8594;</span>
+          <span class="flow-arrow-sub">&#x7D04; 60 min</span>
+        </div>
+        <div class="flow-node flow-end">
+          <span class="flow-node-icon"><i class="ti ti-snowflake"></i></span>
+          <span class="flow-node-name">&#x795E;&#x5C45;&#x96EA;&#x5834;</span>
+          <span class="flow-node-sub">&#x9700;&#x524D;&#x65E5;&#x9810;&#x7D04;</span>
+        </div>
+      </div>
+
+      <table class="transport">
+        <thead>
+          <tr>
+            <th>&#x4EA4;&#x901A;&#x65B9;&#x5F0F;</th>
+            <th>&#x6642;&#x9593;</th>
+            <th>&#x8CBB;&#x7528;&#xFF08;&#x55AE;&#x7A0B;&#xFF09;</th>
+            <th>&#x5099;&#x8A3B;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-bus"></i> &#x6A5F;&#x5834;&#x76F4;&#x9054;&#x5DF4;&#x58EB;</span></td>
+            <td><span class="transport-time">&#x7D04; 60 min</span></td>
+            <td><span class="transport-price">&#x7D04; &#165;1,000</span></td>
+            <td><strong>&#x524D;&#x65E5; 17:00 &#x524D;&#x9808;&#x7DDA;&#x4E0A;&#x9810;&#x7D04;+&#x4ED8;&#x6B3E;</strong><br><span class="transport-note">&#x53BB;&#x7A0B; 9:00&#183;10:00 &#x5169;&#x73ED;&#xFF0C;&#x56DE;&#x7A0B; 14:00&#183;16:30</span></td>
+          </tr>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-bus"></i> &#x6A5F;&#x5834;&#x5DF4;&#x58EB; + &#x9053;&#x5317;&#x5DF4;&#x58EB;</span> <span class="transport-recommend">&#x63A8;&#x85A6;</span></td>
+            <td><span class="transport-time">&#x7D04; 75 min</span></td>
+            <td><span class="transport-price">&#x7D04; &#165;1,600+1,000</span></td>
+            <td>&#x6A5F;&#x5834; &#8594; &#x65ED;&#x5DDD;&#x7AD9;&#xFF08;35 min&#xFF09;&#8594; &#x795E;&#x5C45;&#xFF08;40 min&#xFF09;<br><span class="transport-note">&#x73ED;&#x6B21;&#x8F03;&#x5F48;&#x6027;&#xFF0C;&#x53EF;&#x5148;&#x5230;&#x5E02;&#x5340;&#x653E;&#x884C;&#x674E;</span></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <!-- 路線 B：住宿 → 雪場 -->
+      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--stay-olive); margin: 1.5rem 0 0.8rem;"><i class="ti ti-home" style="margin-right: 0.3em;"></i> &#x65ED;&#x5DDD;&#x5E02;&#x5340;&#x4F4F;&#x5BBF; &#8594; &#x96EA;&#x5834;</h4>
+      <div class="flow-diagram">
+        <div class="flow-node flow-start" style="background: rgba(107, 124, 94, 0.10); border-color: var(--stay-olive);">
+          <span class="flow-node-icon" style="color: var(--stay-olive);"><i class="ti ti-home"></i></span>
+          <span class="flow-node-name">&#x65ED;&#x5DDD;&#x5E02;&#x5340;&#x4F4F;&#x5BBF;</span>
+          <span class="flow-node-sub">JR &#x65ED;&#x5DDD;&#x7AD9;&#x5468;&#x908A;</span>
+        </div>
+        <div class="flow-arrow">
+          <span class="flow-arrow-label" style="background: rgba(107, 124, 94, 0.10); color: var(--stay-olive);">&#x9053;&#x5317;&#x5DF4;&#x58EB; 455</span>
+          <span class="flow-arrow-line">&#8594;</span>
+          <span class="flow-arrow-sub">&#x7D04; 40 min</span>
+        </div>
+        <div class="flow-node flow-end">
+          <span class="flow-node-icon"><i class="ti ti-snowflake"></i></span>
+          <span class="flow-node-name">&#x795E;&#x5C45;&#x96EA;&#x5834;</span>
+          <span class="flow-node-sub">Kamui Ski Links</span>
+        </div>
+      </div>
+
+      <table class="transport">
+        <thead>
+          <tr>
+            <th>&#x4EA4;&#x901A;&#x65B9;&#x5F0F;</th>
+            <th>&#x6642;&#x9593;</th>
+            <th>&#x8CBB;&#x7528;&#xFF08;&#x55AE;&#x7A0B;&#xFF09;</th>
+            <th>&#x5099;&#x8A3B;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-bus"></i> &#x9053;&#x5317;&#x5DF4;&#x58EB; 455 &#x865F;</span> <span class="transport-recommend">&#x63A8;&#x85A6;</span></td>
+            <td><span class="transport-time">&#x7D04; 40 min</span></td>
+            <td><span class="transport-price">&#165;1,000</span></td>
+            <td>&#x65ED;&#x5DDD;&#x7AD9;&#x524D; 22 &#x865F;&#x7AD9;&#x724C;&#x4E0A;&#x8ECA;<br><span class="transport-note">&#x6CBF;&#x9014;&#x505C;&#x9760; OMO7&#183;Art Hotel &#x7B49;&#x4E3B;&#x8981;&#x98EF;&#x5E97;</span></td>
+          </tr>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-bus"></i> &#x98EF;&#x5E97;&#x63A5;&#x99C1;</span></td>
+            <td><span class="transport-time">&#x7D04; 30&#8211;40 min</span></td>
+            <td><span class="transport-price">&#x514D;&#x8CBB;</span></td>
+            <td>&#x90E8;&#x5206;&#x98EF;&#x5E97;&#xFF08;&#x5982; OMO7&#xFF09;&#x63D0;&#x4F9B;&#x514D;&#x8CBB;&#x96EA;&#x5834;&#x63A5;&#x99C1;<br><span class="transport-note">&#x9700;&#x5411;&#x98EF;&#x5E97;&#x6AC3;&#x53F0;&#x78BA;&#x8A8D;&#x9810;&#x7D04;</span></td>
+          </tr>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-car"></i> &#x8A08;&#x7A0B;&#x8ECA;</span></td>
+            <td><span class="transport-time">&#x7D04; 30 min</span></td>
+            <td><span class="transport-price">&#x7D04; &#165;4,000&#8211;5,000</span></td>
+            <td>&#x5F9E;&#x65ED;&#x5DDD;&#x7AD9;&#x6216;&#x98EF;&#x5E97;&#x53EB;&#x8ECA;&#xFF0C;&#x6700;&#x5FEB;&#x4F46;&#x8CBB;&#x7528;&#x8F03;&#x9AD8;</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="stay-note">
+        <span class="stay-note-icon"><i class="ti ti-info-circle"></i></span>
+        <div class="stay-note-text">
+          <strong>住宿提示：</strong>旭川站周邊飯店林立，生活機能極佳，晚上可享受正宗旭川拉麵、成吉思汗鍋等美食。建議入住道北巴士沿線飯店（如 OMO7 旭川、Art Hotel），可直接在飯店門口搭巴士去雪場。神居無夜滑，17:00 前必須下山。
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== 札幌手稻 ========== -->
+    <div class="route-card">
+      <div class="route-card-header">
+        <div class="route-card-icon"><i class="ti ti-mountain"></i></div>
+        <div>
+          <div class="route-card-title">札幌手稻 Sapporo Teine</div>
+          <div class="route-card-subtitle">住宿：札幌市區（JR 札幌站 / 大通 / 薄野飯店）</div>
+        </div>
+      </div>
+
+      <!-- 路線 A：機場 → 雪場 / 札幌市區 -->
+      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--route-blue); margin-bottom: 0.8rem;"><i class="ti ti-plane-arrival" style="margin-right: 0.3em;"></i> 機場 &#8594; 雪場 / 市區住宿</h4>
+      <div class="flow-diagram">
+        <div class="flow-node flow-start">
+          <span class="flow-node-icon"><i class="ti ti-plane"></i></span>
+          <span class="flow-node-name">新千歲機場</span>
+          <span class="flow-node-sub">CTS</span>
+        </div>
+        <div class="flow-arrow">
+          <span class="flow-arrow-label">JR 快速 Airport</span>
+          <span class="flow-arrow-line">&#8594;</span>
+          <span class="flow-arrow-sub">約 50 min</span>
+        </div>
+        <div class="flow-node">
+          <span class="flow-node-icon"><i class="ti ti-train"></i></span>
+          <span class="flow-node-name">JR 手稻站</span>
+          <span class="flow-node-sub">南口 3 號月台</span>
+        </div>
+        <div class="flow-arrow">
+          <span class="flow-arrow-label">JR 巴士手70</span>
+          <span class="flow-arrow-line">&#8594;</span>
+          <span class="flow-arrow-sub">約 16&#8211;25 min</span>
+        </div>
+        <div class="flow-node flow-end">
+          <span class="flow-node-icon"><i class="ti ti-snowflake"></i></span>
+          <span class="flow-node-name">手稻滑雪場</span>
+          <span class="flow-node-sub">Olympia / Highland</span>
+        </div>
+      </div>
+
+      <table class="transport">
+        <thead>
+          <tr>
+            <th>交通方式</th>
+            <th>時間</th>
+            <th>費用（單程）</th>
+            <th>備註</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-train"></i> JR 快速 + JR 巴士手70</span> <span class="transport-recommend">推薦</span></td>
+            <td><span class="transport-time">約 70&#8211;80 min</span></td>
+            <td><span class="transport-price">&#165;2,400</span></td>
+            <td>新千歲直達手稻站（&#165;1,990），轉乘 JR 巴士（&#165;410）直達雪場<br><span class="transport-note">班次密集、隨到隨搭，不需提前預約</span></td>
+          </tr>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-building"></i> 機場先至札幌市區入住</span></td>
+            <td><span class="transport-time">約 37 min</span></td>
+            <td><span class="transport-price">&#165;1,990</span></td>
+            <td>搭 JR 快速 Airport 直達札幌站，先去飯店放行李，隔天一身輕便前往雪場<br><span class="transport-note">市區生活機能極佳，適合晚班機抵達者</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 路線 B：住宿 → 雪場 -->
+      <h4 style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; color: var(--stay-olive); margin: 1.5rem 0 0.8rem;"><i class="ti ti-home" style="margin-right: 0.3em;"></i> 札幌市區住宿 &#8594; 雪場</h4>
+      <div class="flow-diagram">
+        <div class="flow-node flow-start" style="background: rgba(107, 124, 94, 0.10); border-color: var(--stay-olive);">
+          <span class="flow-node-icon" style="color: var(--stay-olive);"><i class="ti ti-home"></i></span>
+          <span class="flow-node-name">札幌市區住宿</span>
+          <span class="flow-node-sub">JR 札幌站 / 大通</span>
+        </div>
+        <div class="flow-arrow">
+          <span class="flow-arrow-label" style="background: rgba(107, 124, 94, 0.10); color: var(--stay-olive);">JR 快速電車</span>
+          <span class="flow-arrow-line">&#8594;</span>
+          <span class="flow-arrow-sub">10&#8211;15 min</span>
+        </div>
+        <div class="flow-node">
+          <span class="flow-node-icon"><i class="ti ti-train"></i></span>
+          <span class="flow-node-name">JR 手稻站</span>
+          <span class="flow-node-sub">南口 3 號月台</span>
+        </div>
+        <div class="flow-arrow">
+          <span class="flow-arrow-label" style="background: rgba(107, 124, 94, 0.10); color: var(--stay-olive);">JR 巴士手70</span>
+          <span class="flow-arrow-line">&#8594;</span>
+          <span class="flow-arrow-sub">16&#8211;25 min</span>
+        </div>
+        <div class="flow-node flow-end">
+          <span class="flow-node-icon"><i class="ti ti-snowflake"></i></span>
+          <span class="flow-node-name">手稻滑雪場</span>
+          <span class="flow-node-sub">Olympia / Highland</span>
+        </div>
+      </div>
+
+      <table class="transport">
+        <thead>
+          <tr>
+            <th>交通方式</th>
+            <th>時間</th>
+            <th>費用（單程）</th>
+            <th>備註</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-train"></i> JR 電車 + JR 巴士（手70線）</span> <span class="transport-recommend">推薦</span></td>
+            <td><span class="transport-time">約 40&#8211;50 min</span></td>
+            <td><span class="transport-price">約 &#165;750</span></td>
+            <td>JR 札幌 &#8594; 手稻站（&#165;340），南口 3 號站牌換巴士（&#165;410）<br><span class="transport-note">班次最頻繁、時間最自由，刷交通 IC 卡即可搭乘</span></td>
+          </tr>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-bus"></i> Bigruns 直達滑雪巴士套票</span></td>
+            <td><span class="transport-time">約 50&#8211;60 min</span></td>
+            <td><span class="transport-price">約 &#165;9,500&#8211;11,000</span></td>
+            <td>札幌市區指定大飯店直達雪場，含<strong>往返巴士 + 纜車一日券</strong><br><span class="transport-note">適合攜帶個人大雪具、不想在車站轉乘者，需提前預約</span></td>
+          </tr>
+          <tr>
+            <td><span class="transport-method"><i class="ti ti-car"></i> 計程車（手稻站 &#8596; 雪場）</span></td>
+            <td><span class="transport-time">約 15 min</span></td>
+            <td><span class="transport-price">約 &#165;2,500&#8211;3,500</span></td>
+            <td>手稻站南口排班計程車直達雪場，2&#8211;3 人同行分攤十分划算</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="stay-note">
+        <span class="stay-note-icon"><i class="ti ti-info-circle"></i></span>
+        <div class="stay-note-text">
+          <strong>住宿提示：</strong>住在札幌市區（札幌站、大通公園、薄野）的生活機能為全北海道首屈一指，百貨、藥妝、居酒屋、拉麵街應有盡有。每日往返手稻僅需 40–50 分鐘，既能在白天痛快滑雪、傍晚欣賞石狩灣夕陽與百萬夜景，下山後還能回札幌吃大餐逛街，是「都會兼顧滑雪」的最完美方案。
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /transport-flow -->
+
+  <!-- 交通總結快查表 -->
+  <div class="comparison-table-wrapper">
+    <table class="comparison">
+      <thead>
+        <tr>
+          <th>交通快查</th>
+          <th>
+            <span class="resort-name-ja">留壽都</span>
+            <span class="resort-name-en">Rusutsu</span>
+          </th>
+          <th>
+            <span class="resort-name-ja">富良野</span>
+            <span class="resort-name-en">Furano</span>
+          </th>
+          <th>
+            <span class="resort-name-ja">神居</span>
+            <span class="resort-name-en">Kamui</span>
+          </th>
+          <th>
+            <span class="resort-name-ja">札幌手稻</span>
+            <span class="resort-name-en">Teine</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-plane"></i> 機場 &#8594; 雪場</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-plane"></i> 最近機場</td>
+          <td>新千歲 CTS</td>
+          <td>旭川 AKJ</td>
+          <td>旭川 AKJ</td>
+          <td>新千歲 CTS</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-clock"></i> 最快時間</td>
+          <td>約 120 min（巴士）</td>
+          <td>約 80 min（巴士）</td>
+          <td>約 75 min（巴士轉乘）</td>
+          <td class="highlight best">約 70&#8211;80 min（JR+巴士）</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-cash"></i> 交通費用</td>
+          <td>&#165;5,000&#8211;6,000</td>
+          <td class="highlight best">&#165;790</td>
+          <td>&#165;1,000</td>
+          <td>約 &#165;2,400</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-calendar-check"></i> 預約需求</td>
+          <td>必須預約</td>
+          <td class="highlight best">免預約</td>
+          <td>前日預約</td>
+          <td class="highlight best">免預約（隨到隨搭）</td>
+        </tr>
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-home"></i> 住宿 &#8594; 雪場</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-map-pin"></i> 住宿區域</td>
+          <td>雪場附近 Airbnb<br><span style="font-size: 0.8em; color: var(--text-tertiary);">泉川區域</span></td>
+          <td>雪場附近 Airbnb<br><span style="font-size: 0.8em; color: var(--text-tertiary);">北之峰區域</span></td>
+          <td>旭川市區<br><span style="font-size: 0.8em; color: var(--text-tertiary);">JR 旭川站周邊</span></td>
+          <td>札幌市區<br><span style="font-size: 0.8em; color: var(--text-tertiary);">札幌站&#183;大通&#183;薄野</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-clock"></i> 通勤時間</td>
+          <td class="highlight best">步行 6&#8211;10 min</td>
+          <td class="highlight">步行 5&#8211;10 min</td>
+          <td>巴士 約 40 min</td>
+          <td>JR+巴士 約 40&#8211;50 min</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-cash"></i> 通勤費用</td>
+          <td class="highlight best">免費（步行）</td>
+          <td class="highlight">免費（步行）</td>
+          <td>&#165;1,000 / 單程</td>
+          <td>約 &#165;750 / 單程</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-tools-kitchen-2"></i> 住宿周邊生活機能</td>
+          <td>弱（需自備食材）</td>
+          <td>中（北之峰有餐廳）</td>
+          <td>強（拉麵、居酒屋、超市）</td>
+          <td class="highlight best">極強（全道首府、購物美食夜生活）</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ===== 裝飾分隔線 ===== -->
+  <div class="divider">
+    <span class="divider-line"></span>
+    <span class="divider-diamond">&#9830;</span>
+    <span class="divider-line"></span>
+  </div>
+
+  <!-- ===== 4天3夜總花費比較專區 ===== -->
+  <div class="section-header">
+    <div class="section-badge"><i class="ti ti-calculator"></i> BUDGET ESTIMATE</div>
+    <h2 class="section-title">四天三夜總花費比較</h2>
+    <p class="section-subtitle">住宿（3晚）＋ 交通（無自駕）＋ 雪票（3天）＋ 裝備租借（3天）全包估算</p>
+  </div>
+
+  <div class="budget-note-box">
+    <i class="ti ti-info-circle" style="color: var(--food-amber); margin-right: 0.3em; font-size: 1.1em; vertical-align: -1px;"></i>
+    <strong>計算基準說明：</strong>房費採指定預估價格（3 晚）；交通採全程大眾運輸（機場往返 + 3 天往返雪場通勤，無自駕）；雪票以 2025–2026 雪季成人 3 天一日券（線上/會員優惠價）；裝備以官方標準套裝（雪板+雪靴 3 天）計算。匯率參考以 <strong>1 TWD &#8776; 4.76 JPY</strong>（1 JPY &#8776; 0.21 TWD）換算，雙幣別對照一目了然。
+  </div>
+
+  <!-- 總花費概覽卡片 -->
+  <div class="budget-overview-grid">
+    <!-- 留壽都 -->
+    <div class="budget-overview-card">
+      <div>
+        <div class="budget-card-title">
+          <span>留壽都</span>
+          <span class="tag tag-coral">極致粉雪奢華</span>
+        </div>
+        <div class="budget-card-sub">住雪場泉川 Airbnb（NT$ 3,823/晚）</div>
+        <div class="budget-card-price-main">NT$ 27,324</div>
+        <div class="budget-card-price-sub">&#8776; &#165;130,100 JPY</div>
+      </div>
+      <ul class="budget-breakdown-list">
+        <li class="budget-breakdown-item"><span>住宿 3 晚</span><span>NT$ 11,469</span></li>
+        <li class="budget-breakdown-item"><span>交通（機場巴士）</span><span>NT$ 2,310</span></li>
+        <li class="budget-breakdown-item"><span>雪票 3 天</span><span>NT$ 7,875</span></li>
+        <li class="budget-breakdown-item"><span>裝備 3 天</span><span>NT$ 5,670</span></li>
+      </ul>
+    </div>
+
+    <!-- 富良野 -->
+    <div class="budget-overview-card">
+      <div>
+        <div class="budget-card-title">
+          <span>富良野</span>
+          <span class="tag tag-amber">綜合平衡首選</span>
+        </div>
+        <div class="budget-card-sub">住雪場北之峰 Airbnb（NT$ 2,800/晚）</div>
+        <div class="budget-card-price-main">NT$ 16,880</div>
+        <div class="budget-card-price-sub">&#8776; &#165;80,380 JPY</div>
+      </div>
+      <ul class="budget-breakdown-list">
+        <li class="budget-breakdown-item"><span>住宿 3 晚</span><span>NT$ 8,400</span></li>
+        <li class="budget-breakdown-item"><span>交通（薰衣草號）</span><span>NT$ 332</span></li>
+        <li class="budget-breakdown-item"><span>雪票 3 天</span><span>NT$ 4,158</span></li>
+        <li class="budget-breakdown-item"><span>裝備 3 天</span><span>NT$ 3,990</span></li>
+      </ul>
+    </div>
+
+    <!-- 神居 -->
+    <div class="budget-overview-card best-budget">
+      <div>
+        <div class="budget-card-title">
+          <span>神居</span>
+          <span class="tag tag-sage">全場最省預算</span>
+        </div>
+        <div class="budget-card-sub">住旭川市區飯店（NT$ 2,000/晚）</div>
+        <div class="budget-card-price-main" style="color: var(--stay-olive);">NT$ 14,694</div>
+        <div class="budget-card-price-sub">&#8776; &#165;69,980 JPY</div>
+      </div>
+      <ul class="budget-breakdown-list">
+        <li class="budget-breakdown-item"><span>住宿 3 晚</span><span>NT$ 6,000</span></li>
+        <li class="budget-breakdown-item"><span>交通（含3天市區巴士）</span><span>NT$ 1,575</span></li>
+        <li class="budget-breakdown-item"><span>雪票 3 天</span><span>NT$ 3,339</span></li>
+        <li class="budget-breakdown-item"><span>裝備 3 天</span><span>NT$ 3,780</span></li>
+      </ul>
+    </div>
+
+    <!-- 札幌手稻 -->
+    <div class="budget-overview-card">
+      <div>
+        <div class="budget-card-title">
+          <span>札幌手稻</span>
+          <span class="tag tag-blue">都會生活兼顧</span>
+        </div>
+        <div class="budget-card-sub">住札幌市區飯店（NT$ 4,000/晚）</div>
+        <div class="budget-card-price-main">NT$ 22,538</div>
+        <div class="budget-card-price-sub">&#8776; &#165;107,320 JPY</div>
+      </div>
+      <ul class="budget-breakdown-list">
+        <li class="budget-breakdown-item"><span>住宿 3 晚</span><span>NT$ 12,000</span></li>
+        <li class="budget-breakdown-item"><span>交通（JR+3天巴士）</span><span>NT$ 1,781</span></li>
+        <li class="budget-breakdown-item"><span>雪票 3 天（含夜滑）</span><span>NT$ 5,292</span></li>
+        <li class="budget-breakdown-item"><span>裝備 3 天</span><span>NT$ 3,465</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 詳細費用對照表 -->
+  <div class="comparison-table-wrapper">
+    <table class="comparison">
+      <thead>
+        <tr>
+          <th>花費細項</th>
+          <th>
+            <span class="resort-name-ja">留壽都</span>
+            <span class="resort-name-en">Rusutsu</span>
+          </th>
+          <th>
+            <span class="resort-name-ja">富良野</span>
+            <span class="resort-name-en">Furano</span>
+          </th>
+          <th>
+            <span class="resort-name-ja">神居</span>
+            <span class="resort-name-en">Kamui</span>
+          </th>
+          <th>
+            <span class="resort-name-ja">札幌手稻</span>
+            <span class="resort-name-en">Teine</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 住宿費用 -->
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-bed"></i> 住宿費用（3 晚）</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-calendar"></i> 每晚預估房價</td>
+          <td>NT$ 3,823<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#8776; &#165;18,200</span></td>
+          <td>NT$ 2,800<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#8776; &#165;13,330</span></td>
+          <td class="highlight best">NT$ 2,000<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#8776; &#165;9,520</span></td>
+          <td>NT$ 4,000<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#8776; &#165;19,040</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-calculator"></i> 住宿 3 晚總額</td>
+          <td>NT$ 11,469<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#8776; &#165;54,600</span></td>
+          <td>NT$ 8,400<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#8776; &#165;40,000</span></td>
+          <td class="highlight best">NT$ 6,000<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#8776; &#165;28,560</span></td>
+          <td>NT$ 12,000<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#8776; &#165;57,120</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-map-pin"></i> 住宿型態與位置</td>
+          <td>泉川區 Airbnb 木屋別墅<br><span style="font-size: 0.8em; color: var(--text-tertiary);">近雪場</span></td>
+          <td>北之峰區 Airbnb 民宿<br><span style="font-size: 0.8em; color: var(--text-tertiary);">近纜車站</span></td>
+          <td>旭川市區商務/星級飯店<br><span style="font-size: 0.8em; color: var(--text-tertiary);">JR 旭川站周邊</span></td>
+          <td>札幌市區熱門商圈飯店<br><span style="font-size: 0.8em; color: var(--text-tertiary);">札幌站 / 大通 / 薄野</span></td>
+        </tr>
+
+        <!-- 交通費用 -->
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-bus"></i> 交通費用（全程大眾運輸，無自駕）</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-plane"></i> 機場往返雪場/市區</td>
+          <td>&#165;11,000<br><span style="font-size: 0.8em; color: var(--text-tertiary);">CTS 往返直達巴士 (NT$ 2,310)</span></td>
+          <td class="highlight best">&#165;1,580<br><span style="font-size: 0.8em; color: var(--text-tertiary);">AKJ 往返薰衣草號 (NT$ 332)</span></td>
+          <td>&#165;1,500<br><span style="font-size: 0.8em; color: var(--text-tertiary);">AKJ 往返旭川站巴士 (NT$ 315)</span></td>
+          <td>&#165;3,980<br><span style="font-size: 0.8em; color: var(--text-tertiary);">CTS 往返札幌 JR 快速 (NT$ 836)</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-walk"></i> 3 天雪場通勤</td>
+          <td class="highlight best">&#165;0（NT$ 0）<br><span style="font-size: 0.8em; color: var(--text-tertiary);">步行 6–10 分鐘</span></td>
+          <td class="highlight best">&#165;0（NT$ 0）<br><span style="font-size: 0.8em; color: var(--text-tertiary);">步行 5–10 分鐘</span></td>
+          <td>&#165;6,000 (NT$ 1,260)<br><span style="font-size: 0.8em; color: var(--text-tertiary);">道北巴士 &#165;2,000/天 &#215; 3天</span></td>
+          <td>&#165;4,500 (NT$ 945)<br><span style="font-size: 0.8em; color: var(--text-tertiary);">JR+巴士 &#165;1,500/天 &#215; 3天</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-calculator"></i> 交通總額</td>
+          <td>NT$ 2,310<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;11,000</span></td>
+          <td class="highlight best">NT$ 332<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;1,580</span></td>
+          <td>NT$ 1,575<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;7,500</span></td>
+          <td>NT$ 1,781<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;8,480</span></td>
+        </tr>
+
+        <!-- 滑雪核心花費 -->
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-snowflake"></i> 滑雪核心花費（3 天）</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-ticket"></i> 成人一日券 &#215; 3 天<br><span style="font-size: 0.8em; color: var(--text-tertiary);">線上預購/會員優惠</span></td>
+          <td>NT$ 7,875<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;37,500（約 &#165;12,500/天）</span></td>
+          <td>NT$ 4,158<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;19,800（&#165;6,600/天）</span></td>
+          <td class="highlight best">NT$ 3,339<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;15,900（&#165;5,300/天）</span></td>
+          <td>NT$ 5,292<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;25,200（&#165;8,400/天 含夜滑）</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-shirt"></i> 裝備租借 &#215; 3 天<br><span style="font-size: 0.8em; color: var(--text-tertiary);">標準套裝（雪板+雪靴）</span></td>
+          <td>NT$ 5,670<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;27,000（官方租借）</span></td>
+          <td>NT$ 3,990<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;19,000（周邊雪具店/官方）</span></td>
+          <td>NT$ 3,780<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;18,000（官方租借）</span></td>
+          <td class="highlight best">NT$ 3,465<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;16,500（官方租借）</span></td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-calculator"></i> 滑雪小計（雪票+裝備）</td>
+          <td>NT$ 13,545<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;64,500</span></td>
+          <td>NT$ 8,148<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;38,800</span></td>
+          <td class="highlight best">NT$ 7,119<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;33,900</span></td>
+          <td>NT$ 8,757<br><span style="font-size: 0.8em; color: var(--text-tertiary);">&#165;41,700</span></td>
+        </tr>
+
+        <!-- 總計 -->
+        <tr class="group-header">
+          <td colspan="5"><i class="ti ti-coin"></i> 四天三夜總計花費（住＋行＋滑）</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-cash"></i> 總花費（TWD）</td>
+          <td style="font-family: var(--font-mono); font-size: 1.15em; font-weight: 700; color: var(--terracotta);">NT$ 27,324</td>
+          <td style="font-family: var(--font-mono); font-size: 1.15em; font-weight: 700; color: var(--route-blue);">NT$ 16,880</td>
+          <td class="highlight best" style="font-family: var(--font-mono); font-size: 1.25em; font-weight: 700; color: var(--stay-olive);">NT$ 14,694</td>
+          <td style="font-family: var(--font-mono); font-size: 1.15em; font-weight: 700; color: var(--near-black);">NT$ 22,538</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-currency-yen"></i> 總花費（JPY 參考）</td>
+          <td style="font-family: var(--font-mono); font-weight: 600;">&#165;130,100</td>
+          <td style="font-family: var(--font-mono); font-weight: 600;">&#165;80,380</td>
+          <td class="highlight best" style="font-family: var(--font-mono); font-weight: 700; color: var(--stay-olive);">&#165;69,980</td>
+          <td style="font-family: var(--font-mono); font-weight: 600;">&#165;107,320</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-chart-bar"></i> 每日平均花費</td>
+          <td>約 NT$ 6,831 / 天</td>
+          <td>約 NT$ 4,220 / 天</td>
+          <td class="highlight best">約 NT$ 3,674 / 天</td>
+          <td>約 NT$ 5,635 / 天</td>
+        </tr>
+        <tr>
+          <td><i class="ti ti-award"></i> 預算分析與優選特點</td>
+          <td><span class="tag tag-coral">極致粉雪</span><br>度假村雪票與租借費用最高，適合追求頂級設施與地形的滑雪者</td>
+          <td><span class="tag tag-amber">綜合CP最高</span><br>住宿平實、薰衣草號交通超便宜且步行到雪場，落差最大最全能</td>
+          <td><span class="tag tag-sage">全場省錢冠軍</span><br>市區房價與雪票全場最低，就算加上 3 天巴士通勤依然最划算</td>
+          <td><span class="tag tag-blue">都會娛樂最高</span><br>市區房價最高，但換來全道頂級生活機能與美食，兼具夜景與海景</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="divider">
+    <span class="divider-line"></span>
+    <span class="divider-diamond">&#9830;</span>
+    <span class="divider-line"></span>
+  </div>
+
+  <!-- ===== 推薦摘要 ===== -->
+  <div class="section-header">
+    <div class="section-badge"><i class="ti ti-bulb"></i> RECOMMENDATION</div>
+    <h2 class="section-title">怎麼選？看這裡</h2>
+    <p class="section-subtitle">根據你的需求，找到最適合的雪場</p>
+  </div>
+
+  <div class="recommendation-box">
+    <h3><i class="ti ti-compass" style="margin-right: 0.3em;"></i> 場景推薦</h3>
+
+    <div class="recommendation-item">
+      <div class="recommendation-icon"><i class="ti ti-building-castle"></i></div>
+      <div class="recommendation-content">
+        <h4>想要頂級度假體驗 &#8594; 留壽都</h4>
+        <p>三山地形規模最大，Ski-in/Ski-out 豪華酒店，溫泉、室內樂園一應俱全。帶家人或不滑雪的同伴也不會無聊。Epic Pass 持有者更具價格優勢。</p>
+      </div>
+    </div>
+
+    <div class="recommendation-item">
+      <div class="recommendation-icon"><i class="ti ti-trophy"></i></div>
+      <div class="recommendation-content">
+        <h4>追求長雪道高落差 &#8594; 富良野</h4>
+        <p>839m 垂直落差為四者之最，世界盃級賽道適合技術精進。雪季從 11 月延續到 5 月初，春滑也有保障。小學以下兒童免費，性價比出色。</p>
+      </div>
+    </div>
+
+    <div class="recommendation-item">
+      <div class="recommendation-icon"><i class="ti ti-sparkles"></i></div>
+      <div class="recommendation-content">
+        <h4>粉雪獵人、預算有限 &#8594; 神居</h4>
+        <p>一日券僅 &#165;5,300，只有留壽都的三分之一。32% 非壓雪地形是樹林滑行天堂，人少不排隊。搭配旭川市區住宿，晚上還能吃到正宗旭川拉麵。</p>
+      </div>
+    </div>
+
+    <div class="recommendation-item">
+      <div class="recommendation-icon"><i class="ti ti-building-skyscraper"></i></div>
+      <div class="recommendation-content">
+        <h4>兼顧都會生活與滑雪自由 &#8594; 札幌手稻</h4>
+        <p>「白天滑雪、晚上吃蟹逛街」。離札幌市區僅 40 分鐘，不自駕搭 JR 與巴士即達，班次極為密集隨到隨搭。擁有 1972 冬奧黑線「北壁」與俯瞰石狩灣和百萬夜景的 6km 超長彩虹雪道，最適合想玩北海道又不想天天困在偏遠山區的旅人。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 貼士 ===== -->
+  <div class="tips-box">
+    <h4><i class="ti ti-alert-triangle"></i> 行前提醒</h4>
+    <ul>
+      <li><strong>線上購票最划算</strong>&#8212;&#8212;尤其留壽都現場 vs 線上差價可達 &#165;4,000，手稻線上購票亦享現省 &#165;1,000，務必提前線上預購。</li>
+      <li><strong>粉雪聯票</strong>&#8212;&#8212;計畫跑多個雪場的話，留意&#12300;Hokkaido Powder Belt Pass&#12301;等區域聯票方案；留壽都與手稻皆屬加森觀光（Kamori），可留意 25 小時聯票等彈性選擇。</li>
+      <li><strong>裝備防寒</strong>&#8212;&#8212;神居位處內陸，冬季氣溫可達 -20&#176;C 以下；手稻山頂 Highland 海拔破千米海風較強，面部防風與保暖務必到位。</li>
+      <li><strong>手稻即時運轉</strong>&#8212;&#8212;手稻山頂 Highland 區如遇強陣風纜車可能暫停，出發當日早晨請至官網確認即時營運狀況。攜帶大雪具者可多加利用各大飯店直達的 Bigruns 巴士套票。</li>
+      <li><strong>交通預約</strong>&#8212;&#8212;留壽都 Big Runs / Resort Liner 等機場長途巴士需提前預約，旺季可能滿座，建議提前 1&#8211;2 週訂位；手稻與富良野市內公共巴士則可隨到隨搭。</li>
+      <li><strong>資料時效</strong>&#8212;&#8212;以上票價與營運時間為 2025&#8211;2026 雪季參考值，出發前請以各雪場官網最新公告為準。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 頁尾 ===== -->
+  <div class="footer">
+    <p class="footer-quote">&#12300;最好的粉雪，永遠是你親自踩上去的那一場。&#12301;</p>
+    <p class="footer-text">HOKKAIDO SKI COMPARISON &#183; 2025&#8211;2026 SEASON &#183; TRAVEL GUIDEBOOK</p>
+  </div>
+
+</body>
+</html>
